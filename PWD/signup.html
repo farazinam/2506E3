@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        p{
+            font-size: 12px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sign Up</h1>
+
+    <form action="signin.html" onsubmit="return validate()">
+        <label for="">Username</label>
+        <input type="text"> <br>
+        <p></p>
+        <!-- user name : faraz -->
+
+        <label for="">Password</label>
+        <input type="password"> <br>
+        <p></p>
+        <!-- password 123 -->
+
+        <button type="submit">Log In</button>
+        <!-- <input type="submit" value="Log In"> -->
+    </form>
+
+<script>
+   function validate(){
+    var un = document.getElementsByTagName("input")[0].value;
+   var ps = document.getElementsByTagName("input")[1].value;
+
+   var unError = document.getElementsByTagName("p")[0];
+   var psError = document.getElementsByTagName("p")[1];
+
+   if(un == ''){
+    unError.innerHTML = "User Name is Required";
+    return false;
+   }
+
+   else if(ps == ""){
+    psError.innerHTML = "Password is Required";
+    unError.innerHTML = "";
+    return false;
+   }
+
+   else{
+    localStorage.setItem("username", un)
+    localStorage.setItem("password", ps)
+    alert("Account Ceated Successfully!");
+   }
+
+
+   }
+</script>
+
+</body>
+</html>
