@@ -38,13 +38,27 @@
    var unError = document.getElementsByTagName("p")[0];
    var psError = document.getElementsByTagName("p")[1];
 
+   var unPatt = /^[a-z]{3,7}$/;
+   var psPatt = /^[a-zA-Z0-9]{8,}$/;
+
    if(un == ''){
     unError.innerHTML = "User Name is Required";
     return false;
    }
 
+   else if(!unPatt.test(un)){
+    unError.innerHTML = "User Name should contain 3 to 7 characters";
+    return false;
+   }
+
    else if(ps == ""){
     psError.innerHTML = "Password is Required";
+    unError.innerHTML = "";
+    return false;
+   }
+
+   else if(!psPatt.test(ps)){
+    psError.innerHTML = "Password should atleast 8 characters";
     unError.innerHTML = "";
     return false;
    }
