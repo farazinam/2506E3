@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!-- Styling Inputs  -->
+    <form>
+        <label class="form-label">Name</label>
+        <input type="text" class="form-control form-control-sm" disabled placeholder="Write your name here">
+        <p class="form-text">Provide your name here..</p>
+
+        <label class="form-label">Email</label>
+        <input type="text" class="form-control form-control-lg" placeholder="Write your name here" value="example@gmail.com" readonly disabled>
+
+        <label class="form-label">Password</label>
+        <input type="text" class="form-control form-control-lg form-control-plaintext" placeholder="Write your name here" value="example@gmail.com">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <!-- Select Menu  -->
+    <form>
+        <select class="form-control form-control-lg" multiple>
+            <option value="" disabled selected>Choose anyone..</option>
+            <option value="">Choice 2</option>
+            <option value="">Choice 3</option>
+            <option value="">Choice 4</option>
+        </select>
+
+
+        <!-- Checkbox  -->
+
+        <h5>Skills</h5>
+
+        <div class="form-check">
+            <label class="form-check-label">GD</label>
+            <input type="checkbox" class="form-check-input">
+        </div>
+
+        <div class="form-check">
+            <label class="form-check-label">VE</label>
+            <input type="checkbox" class="form-check-input">
+        </div>
+        <hr>
+
+
+        <!-- Radio button  -->
+
+        <h5>Gender</h5>
+        <div class="form-check">
+            <label class="form-check-label">Male</label>
+            <input type="radio" class="form-check-input" name="a">
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">Female</label>
+            <input type="radio" class="form-check-input" name="a">
+        </div>
+
+        <div class="form-check form-switch">
+            <label for="">Day/Night Mode</label>
+            <input type="checkbox" class="form-check-input">
+        </div>
+
+        <input type="range" class="form-range" min="1" max="100" step="">
+    </form>
+
+
+    <!-- Input Group  -->
+
+   <div class="input-group">
+    <label class="input-group-text">OK</label>
+    <input type="text" class="form-control">
+    <label class="input-group-text">Cancel</label>
+   </div>
+
+   <div class="input-group">
+    <label class="input-group-text">
+        <i class="bi bi-person-fill-lock"></i>
+    </label>
+    <input type="text" class="form-control">
+   </div>
+
+   <div class="input-group">
+    <label class="input-group-text">
+        <input type="checkbox" class="form-check-input">
+    </label>
+    <input type="text" class="form-control">
+   </div>
+
+   <div class="input-group">
+    <label class="input-group-text">
+        <input type="radio" class="form-check-input">
+    </label>
+    <input type="text" class="form-control">
+   </div>
+
+   <div class="input-group">
+    <!-- <label class="input-group-text"> -->
+        <button class="btn btn-danger">Clear</button>
+    <!-- </label> -->
+    <input type="text" class="form-control">
+   </div>
+
+   <div class="input-group">
+       <input type="file" class="form-control">
+       <button class="btn btn-success">Submit</button>
+   </div>
+
+
+   <!-- Floating Label  -->
+
+   <div class="form-floating">
+       <input type="text" class="form-control" placeholder="">
+       <label class="form-label">Username</label>
+   </div>
+
+   <!-- Pagination  -->
+
+   <ul class="pagination pagination-lg justify-content-center">
+    <li class="page-item">
+        <a href="" class="page-link">Prev</a>
+    </li>
+    <li class="page-item">
+        <a href="" class="page-link active">1</a>
+    </li>
+    <li class="page-item">
+        <a href="" class="page-link">2</a>
+    </li>
+    <li class="page-item">
+        <a href="" class="page-link">3</a>
+    </li>
+    <li class="page-item">
+        <a href="" class="page-link disabled">Next</a>
+    </li>
+   </ul>
+
+   <!-- List Group  -->
+
+   <ul class="list-group list-group-numbered list-group-horizontal">
+    <li class="list-group-item">
+        <a href="" class="">
+            One
+        </a>
+    </li>
+    <li class="list-group-item">
+        <a href="" class="">
+            Two
+        </a>
+    </li>
+    <li class="list-group-item">
+        <a href="" class="">
+            Three
+        </a>
+    </li>
+   </ul>
+
+
+   <div class="list-group">
+    <li class="list-group-item">
+        <a href="" class="list-group-item-action">First</a>
+    </li>
+    <li class="list-group-item">
+        <a href="" class="list-group-item-action">First</a>
+    </li>
+   </div>
+
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
