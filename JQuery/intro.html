@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> -->
+    <script src="jquery.js"></script>
+</head>
+<body>
+
+    <h1>Welcome to JQuery</h1>
+    
+    <p>1. We are Learning JQuery..</p>
+    <p id="para2">2. We are Learning JQuery..</p>
+    <p class="para3">3. We are Learning JQuery..</p>
+
+    <a href="https://code.jquery.com/jquery-3.7.1.min.js">Jquery</a>
+
+    <ul>
+        <li class="a">One</li>
+        <li class="a">Two</li>
+        <li class="a">Three</li>
+        <li class="a">Four</li>
+        <li class="a">Five</li>
+        <li class="a">Six</li>
+    </ul>
+
+    <ul id="second">
+        <li class="a">One</li>
+        <li class="a">Two</li>
+        <li class="a">Three</li>
+        <li class="a">Four</li>
+        <li class="a">Five</li>
+        <li class="a">Six</li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet.</p>
+
+
+    <script>
+        //Using JS
+    //    var p1 = document.getElementsByTagName('p')[0].innerHTML;
+    //    var p2 = document.getElementById('para2').innerHTML;
+    //    var p3 = document.getElementsByClassName('para3')[0].innerHTML;
+    //    document.getElementsByName
+
+    //    console.log(p1);
+    //    console.log(p2);
+    //    console.log(p3);
+
+       //Using JQuery
+
+    //    $(document).ready(function(){
+
+    //    });
+
+    //    $(function(){
+        
+    //    })
+
+       $(document).ready(function (){
+        var para1 = $('p').html()
+        // var para2 = $('#para2').html()
+        // var para3 = $('.para3').html()
+        console.log(para1);
+        // console.log(para2);
+        // console.log(para3); 
+
+        //JS
+        document.getElementById('para2').style.color = 'white';
+        document.getElementById('para2').style.backgroundColor = 'black';
+        
+        //JQuery
+        $('.para3').css('color' , 'white');
+        $('.para3').css('background-color' , 'blue');
+
+        $('#second li:even').css('backgroundColor', 'yellow');
+        $('#second li:odd').css('backgroundColor', 'lightblue');
+
+        // $('p:last').css('color' , 'white')
+        // $('p:last').css('background-color' , 'gray')
+        // $('p:last').css('font-family' , 'arial')
+        // $('p:last').css('font-size' , '30px')
+
+        $('p:last').css({'font-size' : '30px', 'font-family' : 'arial', 'background-color' : 'gray', 'color' : 'white'})
+        
+       })
+
+
+       
+    </script>
+</body>
+</html>
