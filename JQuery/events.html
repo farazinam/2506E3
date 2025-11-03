@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, at!</p>
+    
+    <button onclick="styling()">JS Event</button>
+
+    <button>JQuery Event</button>
+
+    <hr>
+
+    <form>
+        <label for="">Enter Your Name</label>
+        <input type="text"> <br>
+        <select>
+            <option value="">Select Course</option>
+            <option value="CPISM">CPISM</option>
+            <option value="DISM">DISM</option>
+            <option value="hdse">HDSE</option>
+            <option value="adse">ADSE</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+
+    <hr>
+
+    <a href="https://www.aptechproconnect.com/"> <b>Aptech</b> Pro Connect</a>
+    <input type="text" id="inp">
+    <button id="get">Get Data</button>
+    <p></p>
+
+
+
+
+    <script>
+        // $(document).ready(function(){
+
+        // })
+
+        // Event With JS 
+        // function styling(){
+        //     document.getElementById('p1').style.color = 'green';
+        //     document.getElementById('p1').style.backgroundColor = 'yellow';
+        // }
+
+        // Mouse events
+        $(function(){
+            $('button').eq(1).click(function (){
+                $('#p1').css('color' , 'blue');
+            })
+
+            $('button').eq(1).dblclick(function (){
+                $('#p1').css({'color' : 'blue', 'background-color' : 'lightblue'});
+            })
+
+            $('button').eq(1).contextmenu(function (){
+                event.preventDefault();
+                $('#p1').css({'color' : 'blue', 'background-color' : 'lightblue', 'font-family' : 'arial'});
+            })
+
+            $('button').eq(1).mouseenter(function (){
+                $('#p1').css({'color' : 'red', 'background-color' : 'lightcoral', 'font-family' : 'cooper'});
+            })
+            $('button').eq(1).mouseleave(function (){
+                $('#p1').css({'color' : 'white', 'background-color' : 'black', 'font-family' : 'arial'});
+            })
+        })
+
+         // Keyboard events
+        $(function(){
+            $('button').eq(1).keydown(function (){
+                $('#p1').css('color' , 'blue');
+            })
+
+            $('button').eq(1).keyup(function (){
+                $('#p1').css({'color' : 'blue', 'background-color' : 'lightblue'});
+            })
+
+            $('button').eq(1).keypress(function (){
+                $('#p1').css({'color' : 'blue', 'background-color' : 'lightblue', 'font-family' : 'arial'});
+            })
+        })
+
+          // Form events
+        $(function(){
+            $('input').eq(0).focus(function (){
+                $(this).css({'background-color' : 'lightgreen', 'border-radius' : '15px'});
+            })
+
+            $('input').eq(0).blur(function (){
+                $(this).css({'background-color' : 'lightblue'});
+            })
+
+            $('input').eq(0).select(function (){
+                event.preventDefault();
+                $(this).css({'background-color' : 'pink'});
+            })
+
+            $('select').eq(0).change(function (){
+                $(this).css({'background-color' : 'pink'});
+                var selval = $(this).val();
+                $('p:last').html(selval);
+            })
+        })
+
+          // Get Methods
+        $(function(){
+            $('#get').click(function(){
+               var getdata1 =  $('a').eq(0).html();
+               var getdata2 =  $('a').eq(0).text();
+               var attr =  $('a').eq(0).attr('href');
+               var inpval =  $('#inp').eq(0).val();
+
+               console.log(getdata1);
+               console.log(getdata2);
+
+            //    alert(getdata1);
+            //    alert(getdata2);
+
+            //Set Methods
+            //    $('p:last').html(getdata1);
+            //    $('p:last').html(getdata2);
+            //    $('p:last').html(attr);
+               $('p:last').html(inpval);
+               
+            })
+        })
+    </script>
+</body>
+</html>
