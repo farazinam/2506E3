@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+        }
+
+        .contain{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <button id="hideBtn">Hide</button>
+    <button id="showBtn">Show</button>
+    <button id="toggleBtn">Toggle</button> 
+
+    ------
+
+    <button id="fadeoutBtn">Fade Out</button>
+    <button id="fadeinBtn">Fade In</button>
+    <button id="fadetoBtn">Fade To</button> 
+    <button id="fadetoggleBtn">Fade Toggle</button>
+
+    ------
+
+    <button id="slideupBtn">Slide Up</button>
+    <button id="slidedownBtn">Slide Down</button>
+    <button id="slidetoggleBtn">Slide Toggle</button> <hr>
+
+    ------
+
+    <button id="addClass">Add Class</button>
+    <button id="removeClass">Remove Class</button>
+    <button id="toggleClass">Toggle Class</button>
+
+    <div id="div1"></div> <br>
+    <div id="div2" style="background-color: green;"></div> <br>
+    <div id="div3" style="background-color: blue;"></div>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, minus.</p>
+
+
+    <script>
+        $(function(){
+            // Show, Hide, Toggle
+            $('#hideBtn').click(function(){
+                $('div').eq(0).hide(2000, function(){
+                    alert('Hide Hogya');
+                });
+                $('p').eq(0).hide(2000);
+            })
+            $('#showBtn').click(function(){
+                $('div').eq(0).show(1000);
+            })
+            $('#toggleBtn').click(function(){
+                $('div').eq(0).toggle(3000);
+            })
+
+            //FadeIn, FadeOut, FadeTo, FadeToggle
+            $('#fadeoutBtn').click(function(){
+                $('#div1').fadeOut(1000);
+                $('#div2').fadeOut(2000);
+                $('#div3').fadeTo(3000, 0.3);
+            })
+            $('#fadeinBtn').click(function(){
+                $('#div1').fadeIn(1000);
+                $('#div2').fadeIn(2000);
+                $('#div3').fadeTo(3000, 0.3);
+            })
+            $('#fadetoggleBtn').click(function(){
+                $('#div1').fadeToggle(1000);
+                $('#div2').fadeToggle(2000);
+                $('#div3').fadeToggle(3000);
+            })
+
+            //SlideUp, SlideDown, SlideToggle
+            $('#slideupBtn').click(function(){
+                $('#div1').slideUp(1000);
+                $('#div2').slideUp(2000);
+                $('#div3').slideUp(3000);
+            })
+            $('#slidedownBtn').click(function(){
+                $('#div1').slideDown(1000);
+                $('#div2').slideDown(2000);
+                $('#div3').slideDown(3000);
+            })
+            $('#slidetoggleBtn').click(function(){
+                $('#div1').slideToggle(1000);
+                $('#div2').slideToggle(2000);
+                $('#div3').slideToggle(3000);
+            })
+
+            //Add, Remove, and Toggle Class
+            $('#addClass').click(function(){
+                $('body').eq(0).addClass('bg-warning');
+            })
+            $('#removeClass').click(function(){
+                $('body').eq(0).removeClass();
+            })
+            // $('#toggleClass').click(function(){
+            //     $('body').eq(0).toggleClass('bg-dark');
+            // })
+            $('#toggleClass').click(function(){
+                $('#div1').eq(0).toggleClass('contain');
+            })
+        })
+
+
+    </script>
+</body>
+</html>
