@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+
+<!DOCTYPE recs [
+<!ELEMENT recs (student+, faculty+)>
+<!ELEMENT student (id, name, city, house-address)>
+<!ELEMENT faculty (id, name, city, house-address)>
+<!ENTITY ALP "Aptech Learning Pakistan">
+]>
+
+<?xml-stylesheet type="text/css" href="error.css" ?>
+
+<recs xmlns:s = "https://www.instagram.com/"
+xmlns:f = "https://www.keepquitclass.com/"
+>
+
+    <s:student>
+        <s:id>101</s:id>
+        <s:name id="111">Ali</s:name>
+        <s:city>Karachi</s:city>
+        <s:ins-address> &ALP; </s:ins-address>
+    </s:student> 
+    <s:student>
+        <s:id> &amp; </s:id>
+        <s:name>Ahmed</s:name>
+        <s:city>Karachi</s:city>
+        <s:ins-address> &ALP; </s:ins-address>
+    </s:student> 
+
+    <f:faculty>
+        <f:id>101</f:id>
+        <f:name id="111">Bilal</f:name>
+        <f:city>Karachi</f:city>
+        <f:ins-address> &ALP; </f:ins-address>
+    </f:faculty> 
+    <f:faculty>
+        <f:id> &amp; </f:id>
+        <f:name>Askari</f:name>
+        <f:city>Karachi</f:city>
+        <f:ins-address> &ALP; </f:ins-address>
+    </f:faculty>
+</recs>

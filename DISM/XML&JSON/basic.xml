@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+
+<?xml-stylesheet type="text/css" href="error.css" ?>
+
+<recs>
+    <student>
+        <id>101</id>
+        <name id="111">Ali</name>
+        <city>Karachi</city>
+        <house-address>Karachi</house-address>
+    </student> 
+    <student>
+        <id> &amp; </id>
+        <name>Ali</name>
+        <city>Karachi</city>
+        <house-address>Karachi</house-address>
+    </student> 
+
+
+</recs>

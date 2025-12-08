@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+
+<?xml-stylesheet type="text/css" href="error.css" ?>
+
+<recs xmlns:s = "https://www.instagram.com/"
+xmlns:f = "https://www.keepquitclass.com/"
+>
+
+    <s:student>
+        <s:id>101</s:id>
+        <s:name id="111">Ali</s:name>
+        <s:city>Karachi</s:city>
+        <s:house-address>Karachi</s:house-address>
+    </s:student> 
+    <s:student>
+        <s:id> &amp; </s:id>
+        <s:name>Ahmed</s:name>
+        <s:city>Karachi</s:city>
+        <s:house-address>Karachi</s:house-address>
+    </s:student> 
+
+    <f:faculty>
+        <f:id>101</f:id>
+        <f:name id="111">Bilal</f:name>
+        <f:city>Karachi</f:city>
+        <f:house-address>Karachi</f:house-address>
+    </f:faculty> 
+    <f:faculty>
+        <f:id> &amp; </f:id>
+        <f:name>Askari</f:name>
+        <f:city>Karachi</f:city>
+        <f:house-address>Karachi</f:house-address>
+    </f:faculty>
+</recs>

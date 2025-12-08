@@ -1,0 +1,14 @@
+id{
+    color : green;
+}
+name{
+    color : blue;
+}
+
+city{
+    color : red;
+}
+
+student, id, name, city {
+    display : block;
+}
