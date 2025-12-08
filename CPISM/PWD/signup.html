@@ -16,10 +16,13 @@
     <h1>Sign Up</h1>
 
     <form action="signin.html" onsubmit="return validate()">
-        <label for="">Username</label>
+        <!-- <label for="">Username</label>
+        <input type="text"> <br>
+        <p></p> -->
+        <!-- user name : faraz -->
+        <label for="">Email</label>
         <input type="text"> <br>
         <p></p>
-        <!-- user name : faraz -->
 
         <label for="">Password</label>
         <input type="password"> <br>
@@ -32,22 +35,23 @@
 
 <script>
    function validate(){
-    var un = document.getElementsByTagName("input")[0].value;
+    var em = document.getElementsByTagName("input")[0].value;
    var ps = document.getElementsByTagName("input")[1].value;
 
    var unError = document.getElementsByTagName("p")[0];
    var psError = document.getElementsByTagName("p")[1];
 
-   var unPatt = /^[a-z]{3,7}$/;
+//    var unPatt = /^[a-z]{3,7}$/;
+   var emPatt = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
    var psPatt = /^[a-zA-Z0-9]{8,}$/;
 
-   if(un == ''){
-    unError.innerHTML = "User Name is Required";
+   if(em == ''){
+    unError.innerHTML = "Email is Required";
     return false;
    }
 
-   else if(!unPatt.test(un)){
-    unError.innerHTML = "User Name should contain 3 to 7 characters";
+   else if(!emPatt.test(em)){
+    unError.innerHTML = "Invalid Email";
     return false;
    }
 
