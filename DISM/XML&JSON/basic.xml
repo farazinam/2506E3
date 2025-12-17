@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' ?> 
 
-<?xml-stylesheet type="text/css" href="error.css" ?>
+<?xml-stylesheet type="text/xsl" href="abc.xsl" ?>
 
 <recs>
     <student>
@@ -15,6 +15,5 @@
         <city>Karachi</city>
         <house-address>Karachi</house-address>
     </student> 
-
 
 </recs>
