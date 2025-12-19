@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Introduction to JSON</h1>
+
+    <script>
+        var jsonData = {
+            "name" : "Farhan",
+            "age" : 27,
+            "city" : "New York",
+            "isEligible" : true
+        }
+
+        // console.log(jsonData);
+        // document.write("Name : " + jsonData.name + "<br>");
+        // document.write("Age : " + jsonData.age + "<br>");
+        // document.write("City : " + jsonData.city + "<br>");
+        //document.write("Country : " + jsonData.country + "<br>"); //undefined
+
+        document.write(jsonData["name"]);   
+        document.write(jsonData["age"]);   
+        document.write(jsonData["city"]); 
+        
+        document.write("<br>");
+
+        // jsonData.name = "Ahmed";
+        // document.write("Name : " + jsonData.name + "<br>");
+
+        // document.write(jsonData.name + " " + jsonData.age + " " + jsonData.city);
+
+        for(var aptech in jsonData){
+            document.write(aptech + " : " + jsonData[aptech] + "<br>");
+        }
+
+        
+
+    </script>
+</body>
+</html>

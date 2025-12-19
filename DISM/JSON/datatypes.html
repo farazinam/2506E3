@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1>JSON Data Types</h1>
+
+    <script>
+        var jsonDT = {
+            "greeting" : "Hello, World!",
+            "number" : 42,
+            "object" : {"firstName": "John", "lastName": "Doe"},
+            "array" : [1, 2, 3, 4, 5],
+            "boolean" : true,
+            "nullValue" : null
+        }
+
+
+        document.write("Greeting : " + jsonDT.greeting + "<br>");
+        document.write("Number : " + jsonDT.number + "<br>");   
+        document.write("Object : " + jsonDT.object.firstName + " " + jsonDT.object.lastName + "<br>");
+        document.write("<br>Array : " + jsonDT.array[0] + jsonDT.array[1] + "<br>");
+        document.write("Boolean : " + jsonDT.boolean + "<br>");
+    </script>
+</body>
+</html>
