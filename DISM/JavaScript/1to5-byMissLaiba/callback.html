@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function greet(name ,callback){
+        //     document.write("hello "+ name + "<br>")
+        //     callback();
+        // }
+        // function sayGoodBye(){
+        //     document.write(" good bye !!!")
+        // }
+        //  greet("ali",sayGoodBye)
+
+        function fetchData(callback){
+           setTimeout(()=>{
+            document.write("data is fetched <br>")
+            callback();
+           },3000)
+
+        }
+        function processData(){
+            document.write("processing data")
+        }
+        fetchData();
+        processData();
+    </script>
+</body>
+</html>

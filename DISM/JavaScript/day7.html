@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form>
+        <label for="">Enter Name here</label>
+        <input type="text"> <br>
+        <button type="submit"> Submit </button>
+        <p></p>
+    </form>
+
+    <script>
+        var form = document.getElementsByTagName("form")[0];
+        form.addEventListener("submit", function(e){
+            e.preventDefault();
+            var name = document.getElementsByTagName("input")[0].value;       
+            var para = document.getElementsByTagName("p")[0];
+            para.innerHTML = "Hello <b>" + name + "</b>";
+            // alert(name);
+            // console.log(name);
+        })
+
+        // var n = "Faraz Inam";
+        // var age = 22;
+        // var city = "Karachi";
+
+        // document.write("My Name is " + n + "<br> And i am " + age + " years old," + "<br> I live in " + city + "<br>");
+        
+        // document.write(`My name is ${n}, <br>  i am ${age} years old <br> and i live in ${city}`)
+
+        //Ternary Operator
+        var name = "Faraz Inam";
+        var isLogin = true;
+
+        var result = isLogin ? "Welcome " + name : "Guest";
+        //var result = !isLogin ? "Guest"  : "Welcome " + name;
+
+        document.write(result);
+        
+    </script>
+</body>
+</html>
