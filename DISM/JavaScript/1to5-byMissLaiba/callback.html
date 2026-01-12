@@ -7,14 +7,16 @@
 </head>
 <body>
     <script>
-        // function greet(name ,callback){
-        //     document.write("hello "+ name + "<br>")
-        //     callback();
-        // }
-        // function sayGoodBye(){
-        //     document.write(" good bye !!!")
-        // }
-        //  greet("ali",sayGoodBye)
+
+        function greet(name ,callback){
+            document.write("hello "+ name + "<br>")
+            callback();
+        }
+        function sayGoodBye(){
+            document.write(" good bye !!!")
+        }
+         greet("ali",sayGoodBye)
+
 
         function fetchData(callback){
            setTimeout(()=>{
@@ -28,6 +30,7 @@
         }
         fetchData();
         processData();
+        
     </script>
 </body>
 </html>

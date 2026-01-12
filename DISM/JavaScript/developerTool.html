@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        p{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p>Developer Tool</p>
+
+    <form onsubmit="addition()">
+
+        <label for="">Enter First Number</label>
+        <input type="text"> <br>
+
+        <label for="">Enter Second Number</label>
+        <input type="text"> <br>
+
+        <button type="submit">Add</button>
+    </form>
+
+    <h1></h1> 
+
+    <script>
+        //Developer Tool
+
+        function addition(){
+            event.preventDefault();
+            // var num1 = parseInt(document.getElementsByTagName('input')[0].value);
+            // var num2 = parseInt(document.getElementsByTagName('input')[1].value);
+            var num1 =+(document.getElementsByTagName('input')[0].value); 
+            var num2 = +(document.getElementsByTagName('input')[1].value);
+            var res = num1 + num2;
+            //document.write(result)
+
+            document.getElementsByTagName('h1')[0].innerHTML = res ;
+        }
+    </script>
+</body>
+</html>
