@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> Performance Optimization + Web Workers + Lazy Loading </h1>
+
+
+    <script>
+
+        // console.log("Start"); //Synchronous -> 1st
+
+        // setTimeout(() => {  //Macro Task -> 3rd
+        //     console.log("MacroTask");   
+        // }, 0);
+
+        // Promise.resolve().then(()=>{ //Micro Task -> 2nd
+        //     console.log("MicroTask"); 
+        // })
+
+        // console.log("End"); //Synchronous -> 1st
+
+
+        //Web Worker
+
+        const w = new Worker("worker.js")
+
+        w.postMessage(100000000)
+
+        w.onmessage = function (e) {
+            console.log("Output: " + e.data);
+        }
+
+
+        // Without Web Worker
+
+        // let sum = 0;
+        // for (let i = 0; i < 100000000; i++) {
+        //     sum += i;
+        // }
+
+        // console.log("Output : " + sum);
+
+
+    </script>
+</body>
+
+</html>
