@@ -1,3 +1,5 @@
+ -- -------------------  Day 1 ----------------------- 
+
 CREATE DATABASE daraz;
 
 USE daraz;
@@ -67,16 +69,41 @@ age INT CHECK (age >= 18)
 INSERT INTO customer (name, email, age) 
 VALUES ("Ahmed", "ahmed123@gmail.com", 28);
 
+INSERT INTO customer (name, city, email, age)
+VALUES ("Farzan","Karachi", "farzan123@gmail.com", 28);
+
 SELECT * FROM customer;
 
+-- Upadte
 
+UPDATE customer SET city = "Lahore";
+UPDATE customer SET city = "Karachi" WHERE id = 6;
+UPDATE product SET product_quantity = 3 WHERE product_id = 2;
+UPDATE product SET product_quantity = 5 WHERE product_price < 1000;
 
+DELETE FROM product WHERE product_id = 1;
+DELETE FROM customer WHERE age > 25 AND city = "Lahore";
 
+SELECT * FROM product;
+SELECT * FROM customer;
+SELECT * FROM customer WHERE name = "Ali";
+SELECT * FROM customer WHERE city = "Lahore";
+SELECT * FROM customer WHERE age > 20;
+SELECT * FROM customer WHERE NOT age > 20;
+SELECT * FROM customer WHERE age < 20;
 
+SELECT name, email FROM customer WHERE city = "Lahore";
+SELECT name FROM customer WHERE age > 20;
 
+SELECT * FROM customer LIMIT 2;
+SELECT * FROM customer WHERE city = "Lahore" LIMIT 2;
 
+SELECT * FROM customer WHERE city = "Lahore" LIMIT 1, 3;
+SELECT TOP(2) FROM customer;
 
-
+SELECT * FROM product;
+SELECT * FROM product WHERE product_name IS NULL;
+SELECT * FROM product WHERE product_name IS NOT NULL;
 
 
 
