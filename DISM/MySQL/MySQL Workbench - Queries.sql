@@ -74,11 +74,13 @@ VALUES ("Farzan","Karachi", "farzan123@gmail.com", 28);
 
 SELECT * FROM customer;
 
+ -- -------------------  Day 3 ----------------------- 
+
 -- Upadte
 
 UPDATE customer SET city = "Lahore";
 UPDATE customer SET city = "Karachi" WHERE id = 6;
-UPDATE product SET product_quantity = 3 WHERE product_id = 2;
+UPDATE product SET product_quantity = 3 WHERE product_id = 3;
 UPDATE product SET product_quantity = 5 WHERE product_price < 1000;
 
 DELETE FROM product WHERE product_id = 1;
@@ -106,6 +108,58 @@ SELECT * FROM product WHERE product_name IS NULL;
 SELECT * FROM product WHERE product_name IS NOT NULL;
 
 
+ -- -------------------  Day 4 ----------------------- 
 
+SELECT * FROM product;
+SELECT * FROM customer;
 
+-- Transaction
+START TRANSACTION;
+DELETE FROM customer WHERE id = 5;
 
+COMMIT;
+ROLLBACK;
+
+-- CLAUSES
+
+-- Distinct
+SELECT DISTINCT * FROM product;
+SELECT DISTINCT product_name FROM product;
+SELECT DISTINCT product_price FROM product;
+
+-- order by
+SELECT * FROM product ORDER BY product_name;
+SELECT * FROM product ORDER BY product_name ASC;
+SELECT * FROM product ORDER BY product_name DESC;
+
+-- operator
+DELETE FROM product WHERE product_price > 500 AND product_quantity = 10;
+DELETE FROM product WHERE product_price > 500 OR product_quantity = 10;
+
+SELECT * FROM product WHERE product_price BETWEEN 200 AND 300;
+SELECT * FROM product WHERE product_price NOT BETWEEN 200 AND 300;
+SELECT * FROM product WHERE NOT product_price BETWEEN 200 AND 300;
+
+INSERT INTO customer (name, email, age) 
+VALUES ("Feroz", "ahmed@gmail.com", 28),
+("Faiz", "faiz@gmail.com", 24),
+("Mudassir", "mudassir@gmail.com", 26),
+("Furqan", "danish@gmail.com", 28),
+("Faheem", "faheem@gmail.com", 23),
+("Farhan", "farhan@gmail.com", 24),
+("Muntazir", "muntazir@gmail.com", 27),
+("Haris", "haris@gmail.com", 28),
+("hasnain", "hasnain@gmail.com", 23);
+
+SELECT * FROM customer;
+
+SELECT * FROM customer WHERE age = 23 OR age = 26 OR age = 28;
+
+SELECT * FROM customer WHERE age IN (23, 26, 28);
+SELECT * FROM customer WHERE age NOT IN (23, 26, 28);
+
+-- LIKE
+
+SELECT * FROM customer WHERE name LIKE 'F%';
+SELECT * FROM customer WHERE name LIKE '%n';
+SELECT * FROM customer WHERE name LIKE '%a%';
