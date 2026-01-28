@@ -168,7 +168,7 @@ SELECT * FROM customer WHERE name LIKE '%a%';
  -- -------------------  Day 5 ----------------------- 
 
 
-CREATE TABLE employee (
+CREATE TABLE employee1 (
     id INT PRIMARY KEY,
     name VARCHAR(100),
     city VARCHAR(50),
@@ -176,7 +176,7 @@ CREATE TABLE employee (
     salary DECIMAL(10,2)
 );
 
-INSERT INTO employee (id, name, city, department, salary) VALUES
+INSERT INTO employee1 (id, name, city, department, salary) VALUES
 (1, 'Amit Sharma', 'Delhi', 'HR', 45000),
 (2, 'Neha Verma', 'Mumbai', 'Finance', 60000),
 (3, 'Ravi Kumar', 'Bangalore', 'IT', 75000),
@@ -209,7 +209,7 @@ INSERT INTO employee (id, name, city, department, salary) VALUES
 (30, 'Harsh Vardhan', 'Meerut', 'Sales', 47000);
 
 
-SELECT * FROM employee;
+SELECT * FROM employee1;
 
 -- Functions
 -- Built-In Functions
@@ -223,34 +223,58 @@ SELECT MOD(10,3);
 SELECT CONCAT('I ', 'Love ', 'Programming') AS Concatination;
 SELECT UPPER('faraz inam') AS MyName;
 
-SELECT * FROM employee;
+SELECT * FROM customer;
 
-SELECT count(*) AS EmployeesCount FROM employee;
-SELECT count(name) AS EmployeesCount FROM employee;
+SELECT count(*) AS EmployeesCount FROM employee1;
+SELECT count(name) AS EmployeesCount FROM employee1;
 
-SELECT SUM(id) AS SUMofID FROM employee;
-SELECT SUM(salary) AS SUMofSalary FROM employee;
+SELECT SUM(id) AS SUMofID FROM employee1;
+SELECT SUM(salary) AS SUMofSalary FROM employee1;
 
-SELECT MIN(salary) AS MinSalary FROM employee;
+SELECT MIN(salary) AS MinSalary FROM employee1;
 
-SELECT MAX(salary) AS MaxSalary FROM employee;
+SELECT MAX(salary) AS MaxSalary FROM employee1;
 
-SELECT AVG(salary) AS AverageSalary FROM employee;
+SELECT AVG(salary) AS AverageSalary FROM employee1;
 
 -- Group By (Clause)
 
-SELECT SUM(salary), city FROM employee GROUP BY city;
-SELECT SUM(salary), department FROM employee GROUP BY department;
+SELECT SUM(salary), city FROM employee1 GROUP BY city;
+SELECT SUM(salary), department FROM employee1 GROUP BY department;
 
 -- Having
 
-SELECT SUM(salary), department FROM employee GROUP BY department HAVING SUM(salary) > 300000;
+SELECT SUM(salary), department FROM employee1 GROUP BY department HAVING SUM(salary) > 300000;
 
 -- Like Opr
- SELECT * FROM employee WHERE name LIKE '%t%';
+ SELECT * FROM employee1 WHERE name LIKE '%t%';
  
  -- Subquery/NestedQuery/InnerQuery
-SELECT name, salary FROM employee WHERE salary = (SELECT MAX(salary) from employee);
-SELECT * FROM employee WHERE salary = (SELECT MAX(salary) from employee);
+SELECT name, salary FROM employee1 WHERE salary = (SELECT MAX(salary) from employee1);
+SELECT * FROM employee1 WHERE salary = (SELECT MAX(salary) from employee1);
 
-SELECT * FROM employee WHERE salary = (SELECT MIN(salary) from employee);
+SELECT * FROM employee1 WHERE salary = (SELECT MIN(salary) from employee1);
+
+CREATE TABLE employee3 (
+    id INT PRIMARY KEY,
+    name VARCHAR(100),
+    city VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10,2)
+);
+
+SELECT * FROM employee2;
+
+INSERT INTO employee2 (id, name, city, department, salary)
+SELECT * FROM employee1 WHERE salary IN
+(SELECT salary FROM employee1 WHERE salary BETWEEN 50000 AND 60000);
+
+SELECT * FROM employee3;
+
+INSERT INTO employee3 (id, name, city, department, salary)
+SELECT id, name, city, department, salary FROM employee1 WHERE salary >
+(SELECT AVG(salary) FROM employee1);
+
+SELECT AVG(salary) FROM employee1;
+
+
