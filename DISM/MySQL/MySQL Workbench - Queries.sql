@@ -255,6 +255,8 @@ SELECT * FROM employee1 WHERE salary = (SELECT MAX(salary) from employee1);
 
 SELECT * FROM employee1 WHERE salary = (SELECT MIN(salary) from employee1);
 
+ -- -------------------  Day 6 ----------------------- 
+
 CREATE TABLE employee3 (
     id INT PRIMARY KEY,
     name VARCHAR(100),
@@ -277,4 +279,48 @@ SELECT id, name, city, department, salary FROM employee1 WHERE salary >
 
 SELECT AVG(salary) FROM employee1;
 
+ -- -------------------  Day 7 ----------------------- 
+create table department (
+dept_id INT PRIMARY KEY AUTO_INCREMENT, 
+dept_name VARCHAR(100)
+);
 
+INSERT INTO department (dept_name)
+VALUES ('HR'),
+('Marketing'),
+('Engineering');
+ 
+SELECT * FROM department;
+ 
+create table employee (
+id INT PRIMARY KEY auto_increment,
+name VARCHAR(255),
+d_id INT,
+FOREIGN KEY (d_id) REFERENCES department (dept_id)
+);
+
+INSERT INTO employee (name, d_id)
+VALUES ('Ali', 3),
+('Ahmed', 1),
+('Ayan', 3),
+('Hassan', 2),
+('Daniyal', 2),
+('Yasir', 3);
+
+SELECT * FROM employee;
+
+-- JOIN 
+
+-- INNER JOIN
+
+SELECT * FROM employee
+INNER JOIN department
+ON department.dept_id = employee.d_id;
+
+SELECT employee.name, department.dept_name FROM employee
+INNER JOIN department
+ON department.dept_id = employee.d_id;
+ 
+ 
+ 
+ 
