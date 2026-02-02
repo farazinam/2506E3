@@ -321,6 +321,79 @@ SELECT employee.name, department.dept_name FROM employee
 INNER JOIN department
 ON department.dept_id = employee.d_id;
  
+ -- OUTER JOIN
  
+ INSERT INTO department (dept_name)
+ VALUES ("Account");
  
+INSERT INTO employee (name, d_id)
+VALUES ('Muzammil', null),
+('Feroz', null);
+ 
+SELECT * FROM department;
+SELECT * FROM employee;
+ 
+ -- Left Join
+SELECT * FROM employee AS e
+LEFT JOIN department AS d
+ON d.dept_id = e.d_id;
+
+SELECT * FROM employee
+LEFT JOIN department
+ON department.dept_id = employee.d_id
+WHERE department.dept_name = "Marketing";
+
+-- right join
+SELECT * FROM employee
+RIGHT JOIN department
+ON department.dept_id = employee.d_id
+UNION
+SELECT * FROM employee
+LEFT JOIN department
+ON department.dept_id = employee.d_id;
+
+-- full join
+SELECT e.name, d.dept_name FROM employee AS e
+RIGHT JOIN department AS d
+ON d.dept_id = e.d_id
+UNION
+SELECT e.name, d.dept_name FROM employee AS e
+LEFT JOIN department AS d
+ON d.dept_id = e.d_id;
+
+-- cross join
+SELECT e.name, d.dept_name FROM employee AS e
+CROSS JOIN department AS d
+ON d.dept_id = e.d_id;
+
+-- self join
+CREATE TABLE Employees (
+    EmployeeID INT PRIMARY KEY,
+    EmployeeName VARCHAR(100),
+    ManagerID INT,
+    FOREIGN KEY (ManagerID) REFERENCES Employees(EmployeeID)
+);
+
+INSERT INTO Employees (EmployeeID, EmployeeName, ManagerID)
+VALUES (1, "Hamza", null),
+(2, "Shahzaib", null),
+(3, "Owais", null),
+(4, "Tehreem", null),
+(5, "Hassan", null),
+(6, "Atif", null);
+
+SELECT * FROM Employees;
+
+UPDATE Employees SET ManagerID = 3 WHERE EmployeeID = 1;
+UPDATE Employees SET ManagerID = 4 WHERE EmployeeID = 2;
+UPDATE Employees SET ManagerID = 5 WHERE EmployeeID = 3;
+UPDATE Employees SET ManagerID = 5 WHERE EmployeeID = 4;
+UPDATE Employees SET ManagerID = 6 WHERE EmployeeID = 5;
+
+SELECT e1.EmployeeName AS Employee, e2.EmployeeName AS Manager
+FROM Employees e1
+LEFT JOIN Employees e2
+ON e1.ManagerID = e2.EmployeeID;
+
+
  
