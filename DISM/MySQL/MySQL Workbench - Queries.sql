@@ -396,4 +396,85 @@ LEFT JOIN Employees e2
 ON e1.ManagerID = e2.EmployeeID;
 
 
+ -- -------------------  Day 8 ----------------------- 
+
+-- Joins Using Three Table (Practical)
+
+-- Example (Student, Course, Teacher)
+
+create table teacher (
+t_id INT PRIMARY KEY AUTO_INCREMENT,
+t_name VARCHAR(30),
+t_salary INT,
+t_gender ENUM("Male", "Female")
+);
+
+INSERT INTO teacher (t_name, t_salary, t_gender)
+VALUES ("Haris", 25000, "Male"),
+("Ikram", 23000, "Male"),
+("Zehra", 22000, "Female");
+
+SELECT * FROM teacher;
+
+create table course (
+c_id INT PRIMARY KEY AUTO_INCREMENT,
+c_name VARCHAR(20),
+c_duration VARCHAR(10),
+teacher_id INT,
+FOREIGN KEY (teacher_id) REFERENCES teacher (t_id)
+);
+
+INSERT INTO course (c_name, c_duration, teacher_id)
+VALUES ("Calculus", "2", 2),
+("Communication Skills", "1.5", 1),
+("Islamiyat", "2.5", null);
+
+SELECT * FROM course;
+
+create table students (
+std_id INT PRIMARY KEY AUTO_INCREMENT,
+std_name VARCHAR(50),
+std_city VARCHAR(30),
+std_fees INT,
+std_gender ENUM("Male", "Female"),
+course_id INT,
+FOREIGN KEY (course_id) REFERENCES course(c_id)
+);
+
+INSERT INTO students (std_name, std_city, std_fees, std_gender, course_id)
+VALUES ("Ali", "Karachi", 6500, "Male", 3),
+("Hassan", "Karachi", 6000, "Male", 1),
+("Mohsin", "Hyderabad", 7200, "Male", 2),
+("Sana", "Karachi", 6900, "Female", null),
+("Nimra", "Karachi", 7900, "Female", 2);
+
+SELECT * FROM students;
+
+SELECT * FROM students
+INNER JOIN course
+ON course.c_id = students.course_id
+INNER JOIN teacher
+ON course.teacher_id = teacher.t_id;
+
+SELECT s.std_name, s.std_city, s.std_fees, s.std_gender,
+c.c_name, t.t_name
+FROM students AS s
+INNER JOIN course AS c
+ON c.c_id = s.course_id
+INNER JOIN teacher AS t
+ON c.teacher_id = t.t_id;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
