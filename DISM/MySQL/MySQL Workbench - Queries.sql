@@ -464,9 +464,81 @@ ON c.c_id = s.course_id
 INNER JOIN teacher AS t
 ON c.teacher_id = t.t_id;
 
+-- Outer Join 
+
+-- Left Join
+SELECT s.std_name, s.std_city, s.std_fees, s.std_gender,
+c.c_name, t.t_name
+FROM students AS s
+LEFT JOIN course AS c
+ON c.c_id = s.course_id
+LEFT JOIN teacher AS t
+ON c.teacher_id = t.t_id;
+
+-- Right Join
+SELECT s.std_name, s.std_city, s.std_fees, s.std_gender,
+c.c_name, t.t_name
+FROM students AS s
+RIGHT JOIN course AS c
+ON c.c_id = s.course_id
+RIGHT JOIN teacher AS t
+ON c.teacher_id = t.t_id;
+
+-- Full Join
+SELECT s.std_name, s.std_city, s.std_fees, s.std_gender,
+c.c_name, t.t_name
+FROM students AS s
+RIGHT JOIN course AS c
+ON c.c_id = s.course_id
+RIGHT JOIN teacher AS t
+ON c.teacher_id = t.t_id
+UNION
+SELECT s.std_name, s.std_city, s.std_fees, s.std_gender,
+c.c_name, t.t_name
+FROM students AS s
+LEFT JOIN course AS c
+ON c.c_id = s.course_id
+LEFT JOIN teacher AS t
+ON c.teacher_id = t.t_id;
 
 
 
+-- STORED PROCEDURE
+
+DELIMITER //
+CREATE PROCEDURE sp_delStd()
+BEGIN
+SELECT * FROM students;
+END //
+DELIMITER ;
+
+CALL sp_delStd()
+
+
+DELIMITER //
+CREATE PROCEDURE sp_fulljoin()
+BEGIN
+SELECT s.std_name, s.std_city, s.std_fees, s.std_gender,
+c.c_name, t.t_name
+FROM students AS s
+RIGHT JOIN course AS c
+ON c.c_id = s.course_id
+RIGHT JOIN teacher AS t
+ON c.teacher_id = t.t_id
+UNION
+SELECT s.std_name, s.std_city, s.std_fees, s.std_gender,
+c.c_name, t.t_name
+FROM students AS s
+LEFT JOIN course AS c
+ON c.c_id = s.course_id
+LEFT JOIN teacher AS t
+ON c.teacher_id = t.t_id;
+END //
+DELIMITER ;
+
+CALL sp_fulljoin();
+
+SHOW PROCEDURE STATUS;
 
 
 
