@@ -540,12 +540,42 @@ CALL sp_fulljoin();
 
 SHOW PROCEDURE STATUS;
 
+DROP PROCEDURE sp_delStd;
 
+CALL sp_delStd();
 
+ -- -------------------  Day 9 ----------------------- 
+ -- SebQuery
+UPDATE employee SET salary = salary * 1.1
+WHERE d_id = (SELECT dept_id FROM department WHERE dept_name = 'Marketing');
 
+select * from employee;
+select * from department;
 
+ALTER TABLE employee ADD COLUMN salary VARCHAR(100);
+UPDATE employee SET salary = 25000;
 
+SET SQL_SAFE_UPDATES = 0;
 
+-- VIEWS
+
+CREATE VIEW vw_emp
+ AS
+ SELECT id, name, d_id FROM employee;
+
+SELECT * FROM vw_emp;
+
+CREATE VIEW vw_emp1
+ AS
+ SELECT * FROM employee;
+
+SELECT * FROM vw_emp1;
+
+DROP VIEW vw_emp1;
+
+ALTER VIEW vw_emp1
+ AS
+ SELECT id, name FROM employee;
 
 
 
