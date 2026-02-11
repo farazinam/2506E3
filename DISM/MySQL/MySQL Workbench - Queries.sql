@@ -576,7 +576,36 @@ DROP VIEW vw_emp1;
 ALTER VIEW vw_emp1
  AS
  SELECT id, name FROM employee;
+ 
 
+ -- -------------------  Day 10 ----------------------- 
 
+ -- DCL
+ 
+ -- Create User
+ 
+CREATE USER
+ 'Aptech'@'localhost'
+ IDENTIFIED BY 'aptech123';
+ 
+ -- GRANDT AND REVOKE USER
+GRANT SELECT 
+ON daraz.department
+TO 'Aptech'@'localhost';
 
+USE daraz;
+SELECT * FROM department;
+
+DELETE from department WHERE dept_id = 1;
+
+SELECT * FROM employee;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
