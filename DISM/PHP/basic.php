@@ -202,10 +202,35 @@
         echo("This Fruits is NOT available right now");
      }
 
+print("<hr>");
+   // --------------- Day 4 -------------------
 
-     //Loops
+   echo PHP_INT_MAX;
+   
+   print("<br>");
+
+   $f = "12";
+   echo(is_float($f));
+
+   echo(is_string($f));
+
+   echo("My \$Name \"is \n Faraz \\ Inam");
      
 
+   echo("<h2> Array </h2>");
+   echo("<h3> Indexed </h3>");
+
+   $ind = array("A", "B", "C");
+   var_dump($ind);
+   echo($ind[0]);
+   echo($ind[1]);
+   echo($ind[2]);
+
+   for($a = 0; $a < 3; $a++){
+      echo($ind[$a]);
+   }
+
+   echo("<h3> Multi-Dimentio </h3>");
 
 
     ?>
