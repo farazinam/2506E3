@@ -17,6 +17,7 @@
         <tr>
             <th>Category ID</th>
             <th>Category Name</th>
+            <th>Actions</th>
         </tr>
 
        <?php 
@@ -24,6 +25,10 @@
         <tr>
             <td> <?php echo($data[0]) ?> </td>
             <td> <?php echo($data[1]) ?> </td>
+            <td> 
+                <a href="deleteCategory.php?id=<?php echo($data[0]) ?>"> Delete </a>
+                <a href="updateCategory.php?id=<?php echo($data[0]) ?>"> Edit </a>
+            </td>
         </tr>
        <?php } ?>
 
