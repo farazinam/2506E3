@@ -64,7 +64,7 @@
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>Category</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="addCategory.php" class="dropdown-item">Add Category</a>
-                            <a href="typography.html" class="dropdown-item">View Category</a>
+                            <a href="viewCategory.php" class="dropdown-item">View Category</a>
                         </div>
                     </div>
                     <a href="widget.html" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Widgets</a>
