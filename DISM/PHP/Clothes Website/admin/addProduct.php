@@ -52,15 +52,21 @@ if(ISSET($_POST["addpro"])){
         // echo $pp;
         // echo $pd;
         // echo print_r($pi);
-        
-       $ins = "INSERT INTO product (product_name, product_price, product_description, product_image)
-        VALUES ('$pn', '$pp', '$pd', '$imgname')";
 
-        $query = mysqli_query($conn, $ins);
+        $folder = "upload/" . $imgname;
 
-        if($query){
-            echo "Record Inserted!";
-        }
+        if(is_uploaded_file($imgtmpname)){
+            move_uploaded_file($imgtmpname, $folder);
+
+            $ins = "INSERT INTO product (product_name, product_price, product_description, product_image)
+             VALUES ('$pn', '$pp', '$pd', '$imgname')";
+     
+             $query = mysqli_query($conn, $ins);
+     
+             if($query){
+                 echo "Record Inserted!";
+             }
+        }   
     }
 
 include("footer.php");
