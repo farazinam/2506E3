@@ -9,11 +9,11 @@ include("header.php");
             <!-- Table Start -->
             <div class="container-fluid pt-4 px-4">
                 <div class="row g-4">
-                    <div class="col-sm-12 col-xl-6">
+                    <div class="col-sm-12 col-xl-12">
                         <div class="bg-light rounded h-100 p-4">
                             <h6 class="mb-4">All Product</h6> 
                             <table class="table table-hover">
-                                <thead>
+                                <thead class="table-dark">
                                     <tr>
                                         <th scope="col">Product ID</th>
                                         <th scope="col">Product Name</th>
@@ -32,8 +32,8 @@ include("header.php");
                                         <td> <?php echo $data[3] ?></td>
                                         <td> <img src="upload/<?php echo $data[4] ?>" alt="" width="100px"></td>
                                         <td>
-                                            <a href="updateCategory.php?id=<?php echo $data[0] ?>">Edit</a>
-                                            <a href="deleteCategory.php?id=<?php echo $data[0] ?>">Delete</a>
+                                            <a href="updateProduct.php?id=<?php echo $data[0] ?>">Edit</a>
+                                            <a href="deleteProduct.php?id=<?php echo $data[0] ?>">Delete</a>
                                         </td>
                                     </tr>
                                     <?php } ?>
