@@ -2,7 +2,9 @@
 include("config.php");
 include("header.php");
 
-  $fetch = "SELECT * FROM product";  //
+  $fetch = "SELECT * FROM product AS p
+  INNER JOIN category AS c
+  ON c.category_id = p.category_id";  //
   $query = mysqli_query($conn, $fetch);
 ?>
 
@@ -19,6 +21,7 @@ include("header.php");
                                         <th scope="col">Product Name</th>
                                         <th scope="col">Product Price</th>
                                         <th scope="col">Product Description</th>
+                                        <th scope="col">Category</th>
                                         <th scope="col">Product Image</th>
                                         <th scope="col">Action</th>
                                     </tr>
@@ -26,11 +29,12 @@ include("header.php");
                                 <tbody>
                                     <?php while($data = mysqli_fetch_array($query)){ ?>
                                     <tr>
-                                        <th scope="row"> <?php echo $data[0] ?></th>
-                                        <td> <?php echo $data[1] ?></td>
-                                        <td> <?php echo $data[2] ?></td>
-                                        <td> <?php echo $data[3] ?></td>
-                                        <td> <img src="upload/<?php echo $data[4] ?>" alt="" width="100px"></td>
+                                        <th scope="row"> <?php echo $data["product_id"] ?></th>
+                                        <td> <?php echo $data["product_name"] ?></td>
+                                        <td> <?php echo $data["product_price"] ?></td>
+                                        <td> <?php echo $data["product_description"] ?></td>
+                                        <td> <?php echo $data["category_name"] ?></td>
+                                        <td> <img src="upload/<?php echo $data["product_image"] ?>" alt="" width="100px"></td>
                                         <td>
                                             <a href="updateProduct.php?id=<?php echo $data[0] ?>">Edit</a>
                                             <a href="deleteProduct.php?id=<?php echo $data[0] ?>">Delete</a>

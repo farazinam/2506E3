@@ -1,6 +1,9 @@
 <?php 
 include("config.php");
 include("header.php");
+
+$sel = "SELECT * FROM category";
+$query = mysqli_query($conn, $sel);
 ?>
 
             <!-- Form Start -->
@@ -25,6 +28,14 @@ include("header.php");
                                     <input type="text" name="pd" class="form-control" id="exampleInputEmail1"
                                         aria-describedby="emailHelp" placeholder="Product Description">
                                 </div>
+
+                                <select name="ci" required class="form-select mb-3">
+                                <option disabled selected>Select Category</option>
+                                <?php while($data = mysqli_fetch_array($query)){ ?>
+                                <option value="<?php echo $data[0] ?>"> <?php echo $data[1] ?></option>
+                                <?php } ?>
+                            </select>
+                                
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label">Product Image</label>
                                     <input type="file" name="pi" class="form-control" id="exampleInputEmail1"
@@ -43,6 +54,7 @@ if(ISSET($_POST["addpro"])){
         $pn = $_POST["pn"];
         $pp = $_POST["pp"];
         $pd = $_POST["pd"];
+        $ci = $_POST["ci"]; //
         $pi = $_FILES["pi"];
 
         $imgname = $pi["name"];
@@ -58,8 +70,8 @@ if(ISSET($_POST["addpro"])){
         if(is_uploaded_file($imgtmpname)){
             move_uploaded_file($imgtmpname, $folder);
 
-            $ins = "INSERT INTO product (product_name, product_price, product_description, product_image)
-             VALUES ('$pn', '$pp', '$pd', '$imgname')";
+            $ins = "INSERT INTO product (product_name, product_price, product_description, category_id, product_image)
+             VALUES ('$pn', '$pp', '$pd', '$ci', '$imgname')";
      
              $query = mysqli_query($conn, $ins);
      
