@@ -45,7 +45,7 @@
         <!-- Sidebar Start -->
         <div class="sidebar pe-4 pb-3">
             <nav class="navbar bg-light navbar-light">
-                <a href="index.html" class="navbar-brand mx-4 mb-3">
+                <a href="index.php" class="navbar-brand mx-4 mb-3">
                     <h3 class="text-primary"><i class="fa fa-hashtag me-2"></i>DASHMIN</h3>
                 </a>
                 <div class="d-flex align-items-center ms-4 mb-4">
@@ -76,6 +76,15 @@
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="addProduct.php" class="dropdown-item">Add Product</a>
                             <a href="viewProduct.php" class="dropdown-item">View Product</a>
+                        </div>
+                    </div>
+
+                    <!-- Role  -->
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>Role</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="addRole.php" class="dropdown-item">Add Role</a>
+                            <a href="viewRole.php" class="dropdown-item">View Role</a>
                         </div>
                     </div>
 

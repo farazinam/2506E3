@@ -1,5 +1,15 @@
 <?php 
 include("header.php");
+include("config.php");
+
+$selpro = "SELECT COUNT(*) as product_count FROM product";
+$proq = mysqli_query($conn, $selpro);
+$procount = mysqli_fetch_array($proq);
+
+$selcat = "SELECT COUNT(*) as category_count FROM category";
+$catq = mysqli_query($conn, $selcat);
+$catcount = mysqli_fetch_array($catq);
+
 ?>
 
             <!-- Sale & Revenue Start -->
@@ -9,8 +19,8 @@ include("header.php");
                         <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
                             <i class="fa fa-chart-line fa-3x text-primary"></i>
                             <div class="ms-3">
-                                <p class="mb-2">Today Sale</p>
-                                <h6 class="mb-0">$1234</h6>
+                                <p class="mb-2">Products</p>
+                                <h6 class="mb-0"> <?php echo $procount["product_count"] ?> </h6>
                             </div>
                         </div>
                     </div>
@@ -18,8 +28,8 @@ include("header.php");
                         <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
                             <i class="fa fa-chart-bar fa-3x text-primary"></i>
                             <div class="ms-3">
-                                <p class="mb-2">Total Sale</p>
-                                <h6 class="mb-0">$1234</h6>
+                                <p class="mb-2">Categories</p>
+                                <h6 class="mb-0"> <?php echo $catcount["category_count"] ?> </h6>
                             </div>
                         </div>
                     </div>
@@ -27,7 +37,7 @@ include("header.php");
                         <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
                             <i class="fa fa-chart-area fa-3x text-primary"></i>
                             <div class="ms-3">
-                                <p class="mb-2">Today Revenue</p>
+                                <p class="mb-2">Users</p>
                                 <h6 class="mb-0">$1234</h6>
                             </div>
                         </div>
@@ -36,7 +46,7 @@ include("header.php");
                         <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
                             <i class="fa fa-chart-pie fa-3x text-primary"></i>
                             <div class="ms-3">
-                                <p class="mb-2">Total Revenue</p>
+                                <p class="mb-2">Orders</p>
                                 <h6 class="mb-0">$1234</h6>
                             </div>
                         </div>
