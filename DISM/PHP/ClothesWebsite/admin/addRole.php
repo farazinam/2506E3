@@ -33,7 +33,10 @@ if(ISSET($_POST["addrole"])){
         $query = mysqli_query($conn, $ins);
 
         if($query){
-            echo "Role Added!";
+            echo "<script>
+            alert('Role Added');
+            window.location.href = 'viewRole.php';
+            </script>";
         }
     }
 
