@@ -44,14 +44,15 @@
 					<!-- Start Column 2 -->
 					 <?php while($fetch = mysqli_fetch_array($query)){ ?>
 					<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-						<a class="product-item" href="cart.html">
+						<a class="product-item" href="cart.php">
 							<img src="../admin/upload/<?php echo $fetch["product_image"] ?>" style="height: 200px;" class="img-fluid product-thumbnail">
 							<h3 class="product-title"> <?php echo $fetch["product_name"] ?> </h3>
 							<strong class="product-price"><?php echo $fetch["product_price"] ?></strong> <br>
 							
 							<span class="icon-cross">
 								<img src="images/cross.svg" class="img-fluid">
-								<a href="checkout.html">Buy Now</a>
+								<a href="detailPage.php" class="d-block text-center">View detail</a>
+								<a href="checkout.php" class="d-block text-center btn btn-success w-75 mx-auto">Buy Now</a>
 							</span>
 						</a>
 					</div> 
