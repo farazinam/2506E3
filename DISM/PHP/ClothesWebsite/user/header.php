@@ -1,3 +1,10 @@
+<?php
+session_start();
+
+$getUser = $_SESSION['unSession'] ?? "<li><a class='nav-link' href='../signin.php'><img src='images/user.svg'></a></li>";
+?>
+
+
 <!-- /*
 * Bootstrap 5
 * Template Name: Furni
@@ -51,8 +58,8 @@
 					</ul>
 
 					<ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
-						<li><a class="nav-link" href="#"><img src="images/user.svg"></a></li>
-						<li><a class="nav-link" href="cart.html"><img src="images/cart.svg"></a></li>
+						<?php echo $getUser ?>
+						<a href="../logout.php"><i class="bi bi-box-arrow-right"></i></a>
 					</ul>
 				</div>
 			</div>

@@ -10,6 +10,10 @@ $selcat = "SELECT COUNT(*) as category_count FROM category";
 $catq = mysqli_query($conn, $selcat);
 $catcount = mysqli_fetch_array($catq);
 
+$seluser = "SELECT COUNT(*) as user_count FROM users WHERE role_id = 2";
+$userq = mysqli_query($conn, $seluser);
+$usercount = mysqli_fetch_array($userq);
+
 ?>
 
             <!-- Sale & Revenue Start -->
@@ -38,7 +42,7 @@ $catcount = mysqli_fetch_array($catq);
                             <i class="fa fa-chart-area fa-3x text-primary"></i>
                             <div class="ms-3">
                                 <p class="mb-2">Users</p>
-                                <h6 class="mb-0">$1234</h6>
+                                <h6 class="mb-0"><?php echo $usercount["user_count"] ?></h6>
                             </div>
                         </div>
                     </div>

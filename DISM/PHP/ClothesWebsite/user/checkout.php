@@ -1,5 +1,7 @@
 <?php
 include "header.php";
+
+echo $_SESSION['unSession'] ?? "<script> window.location.href = '../signin.php';</script>";
 ?>
 
 		<!-- Start Hero Section -->

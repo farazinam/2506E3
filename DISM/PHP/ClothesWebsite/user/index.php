@@ -51,7 +51,7 @@
 							
 							<span class="icon-cross">
 								<img src="images/cross.svg" class="img-fluid">
-								<a href="detailPage.php" class="d-block text-center">View detail</a>
+								<a href="detailPage.php?id=<?php echo $fetch["product_id"] ?>" class="d-block text-center">View detail</a>
 								<a href="checkout.php" class="d-block text-center btn btn-success w-75 mx-auto">Buy Now</a>
 							</span>
 						</a>
