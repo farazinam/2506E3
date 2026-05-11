@@ -7,12 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello Laravel</h1>
-
-        {{ "Hello World!" }}
-    {!! "<h1> Hello </h1>" !!}
-    {!! "<h3>This is Heading 3</h3>" !!}
-
-    <h3>Hello HTML</h3>
+    
+    @php
+       $name= "faraz Inam"; 
+    @endphp
+    {{ "Hello World!" }}
+    {{ "Hello" . $name }}
 </body>
 </html>
