@@ -9,15 +9,16 @@
 <body>
     <h1> This is CONTACT Page</h1>
 
-    <form action="/create" method="post">
+    <form action="/addstudent" method="post">
+        @csrf
         <label for="">Student Name</label>
-        <input type="text" name="name"> <br>
+        <input type="text" name="n"> <br>
         <label for="">Student Age</label>
-        <input type="text" name="age"> <br>
+        <input type="text" name="a"> <br>
         <label for="">Student Email</label>
-        <input type="text" name="email"> <br>
+        <input type="text" name="e"> <br>
         <label for="">Student Course</label>
-        <input type="text" name="course"> <br>
+        <input type="text" name="c"> <br>
         <button type="submit">Add Data</button>
     </form>
 </body>

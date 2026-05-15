@@ -9,6 +9,7 @@ use App\Http\Controllers\StudentController;
 
 Route::controller(StudentController::class)->group(function(){
     Route::get('/', 'welcome');
-    Route::get('/about', 'about');
-    Route::get('/rabta', 'rabta');
+    Route::get('/readstudent', 'readstudent');
+    Route::get('/addstudent', 'addstudentform');
+    Route::post('/addstudent', 'addstudent');
 });
