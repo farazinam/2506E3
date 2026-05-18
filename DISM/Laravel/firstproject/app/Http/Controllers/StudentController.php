@@ -20,9 +20,16 @@ class StudentController extends Controller
         $std->email = $req["e"];
         $std->course = $req["c"];
         $std->save();
-        return redirect("readstudent");
+        return redirect("readstudent")->withSuccess("Record Inserted");
     }
     public function readstudent(){
-        return view("readstudent");
+        $fetchData = students::all();
+        $details = compact("fetchData");
+        return view("readstudent")->with($details);
+    }
+    public function delete($id){
+        $foundID = students::find($id);
+        $foundID->delete();
+        return redirect("readstudent")->withYes("Record Deleted");
     }
 }

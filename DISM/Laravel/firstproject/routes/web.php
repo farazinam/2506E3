@@ -12,4 +12,5 @@ Route::controller(StudentController::class)->group(function(){
     Route::get('/readstudent', 'readstudent');
     Route::get('/addstudent', 'addstudentform');
     Route::post('/addstudent', 'addstudent');
+    Route::get('/delete/{id}', 'delete')->name('del_route');
 });
