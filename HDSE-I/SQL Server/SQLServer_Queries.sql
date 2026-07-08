@@ -1,4 +1,4 @@
-CREATE DATABASE personal;
+
 
 USE personal;
 
@@ -17,7 +17,7 @@ INSERT INTO contact (first_name, last_name, email, phone_number, address)
 VALUES ('Muhammad', 'Ali', 'muhammadali@gmail.com', 3102, 'abc Street');
 
 INSERT INTO contact
-VALUES ('Muhammad', 'Bilal', 'muhammadbilal@gmail.com', 3102, 'abc Street', 'Lahore');
+VALUES ('Muhammad', 'Bilal', 'muhammadbilal@gmail.com', 3102, 'abc Street');
 
 INSERT INTO contact
 VALUES ('Muhammad', 'Ibrahim', 'muhammadibrahim@gmail.com', 3102, 'abc Street'),
@@ -262,4 +262,261 @@ SELECT * FROM products ORDER BY price DESC;
 SELECT category, SUM(price) FROM products GROUP BY category;
 
 -- GROUP BY WITH WHERE
-SELECT category, SUM(price) AS ProductPriceSUM FROM products WHERE price > 123456 GROUP BY category;
+SELECT category, SUM(price) AS ProductPriceSUM FROM products WHERE price > 28500 GROUP BY category;
+
+ -- ------------------ Day 5 ---------------
+
+-- Joins
+CREATE TABLE Customerr (
+    CustomerID INT PRIMARY KEY,
+    CustomerName VARCHAR(100),
+    City VARCHAR(50),
+    ProductID INT
+);
+
+CREATE TABLE Productt (
+    ProductID INT PRIMARY KEY,
+    ProductName VARCHAR(100),
+    Category VARCHAR(50),
+    Price DECIMAL(10,2)
+);
+
+INSERT INTO Productt (ProductID, ProductName, Category, Price)
+VALUES
+(101, 'Laptop', 'Electronics', 75000.00),
+(102, 'Smartphone', 'Electronics', 35000.00),
+(103, 'Office Chair', 'Furniture', 12000.00),
+(104, 'Desk', 'Furniture', 18000.00),
+(105, 'Headphones', 'Accessories', 4500.00);
+
+INSERT INTO Customerr (CustomerID, CustomerName, City, ProductID)
+VALUES
+(1, 'Ali', 'Karachi', 101),
+(2, 'Ahmed', 'Lahore', 102),
+(3, 'Sara', 'Islamabad', 103),
+(4, 'Ayesha', 'Karachi', 101),
+(5, 'Bilal', 'Peshawar', 105),
+(6, 'Fatima', 'Quetta', NULL);
+
+-- Inner Join
+SELECT * FROM Productt 
+JOIN Customerr
+ON Productt.ProductID = Customerr.ProductID;
+
+SELECT c.CustomerName, c.City, p.ProductName, p.Price FROM Productt AS p
+JOIN Customerr AS c
+ON p.ProductID = c.ProductID;
+
+-- Full Join
+SELECT * FROM Productt 
+FULL JOIN Customerr
+ON Productt.ProductID = Customerr.ProductID;
+
+-- Right Join
+SELECT * FROM Productt 
+RIGHT JOIN Customerr
+ON Productt.ProductID = Customerr.ProductID;
+
+-- Left Join
+SELECT * FROM Productt 
+LEFT JOIN Customerr
+ON Productt.ProductID = Customerr.ProductID;
+
+CREATE TABLE Orders (
+    OrderID INT PRIMARY KEY,
+    CustomerID INT,
+    ProductID INT,
+    Quantity INT,
+    OrderDate DATE,
+    FOREIGN KEY (CustomerID) REFERENCES Customerr(CustomerID),
+    FOREIGN KEY (ProductID) REFERENCES Productt(ProductID)
+);
+
+INSERT INTO Orders (OrderID, CustomerID, ProductID, Quantity, OrderDate)
+VALUES
+(1001, 1, 101, 1, '2026-01-10'),
+(1002, 2, 102, 2, '2026-01-12'),
+(1003, 3, 103, 1, '2026-01-15'),
+(1004, 1, 105, 2, '2026-01-18'),
+(1005, 5, 105, 1, '2026-01-20'),
+(1006, 4, 101, 1, '2026-01-25');
+
+
+SELECT * FROM Orders
+INNER JOIN Customerr
+ON Orders.CustomerID = Customerr.CustomerID
+INNER JOIN Productt
+ON Orders.ProductID = Productt.ProductID;
+
+
+ -- ------------------ Day 6 ---------------
+
+
+
+-- ________________Types of Indexes in SQL Server_____________________
+
+-- _____________ Clustered Index ______________ --  EXAMPLE: Dictionary
+
+--A clustered index determines the physical order of rows in a table.
+--Each table can have only one clustered index because the rows are physically arranged based on this index.
+--The Primary Key constraint automatically creates a clustered index.
+
+CREATE TABLE Employees (
+    EmployeeID INT PRIMARY KEY,  -- Automatically creates a clustered index
+    Name VARCHAR(100),
+    Salary DECIMAL(10,2)
+);
+
+-- OR
+
+CREATE CLUSTERED INDEX IX_Employees_Salary  
+ON Employees (Salary);  -- Manually creating a clustered index
+
+
+
+-- _____________ Non-Clustered Index ______________ -- EXAMPLE: Book Index
+
+--A non-clustered index does not affect the physical order of rows.
+--Instead, it creates a separate structure to store index key values with pointers to the actual table rows.
+--A table can have multiple non-clustered indexes.
+
+CREATE NONCLUSTERED INDEX IX_Employees_Name  
+ON Employees (Name);  
+
+--OR
+
+CREATE INDEX IX_Employees_Name    -- NONCLUSTERED keyword is optional in nonclustered type
+ON Employees (Name);  
+
+
+
+sp_helpindex yourindexname;
+
+
+-- Querying MetaData / SubQuery / Nesteed Query / Inner Query
+
+SELECT * FROM Products;
+
+SELECT * FROM products WHERE Price = (SELECT MAX(Price) from Products);
+SELECT ProductName, Brand, Price, QuantitySold FROM products WHERE Price = (SELECT MAX(Price) from Products);
+
+SELECT AVG(Price) from Products;
+SELECT * FROM products WHERE Price > (SELECT AVG(Price) from Products);
+SELECT * FROM products WHERE Price < (SELECT AVG(Price) from Products);
+
+SELECT * FROM Customerr;
+SELECT * FROM Productt;
+
+SELECT TOP 1
+    p.ProductID,
+    p.ProductName,
+    p.Price,
+    COUNT(c.CustomerID) AS CustomerCount
+FROM Productt p
+JOIN Customerr c ON p.ProductID = c.ProductID
+GROUP BY p.ProductID, p.ProductName, p.Price
+ORDER BY COUNT(c.CustomerID) DESC;
+
+
+
+ -- ------------------ Day 7 ---------------
+
+ CREATE TABLE employees (
+ id INT,
+ name VARCHAR(100),
+ age INT,
+ salary INT,
+ city VARCHAR (50)
+ );
+
+ INSERT INTO employees (id, name, age, salary, city)
+ VALUES(3, 'Hassan', 12, 43000, 'Karachi');
+
+ SELECT * FROM employees;
+
+ TRUNCATE TABLE employees;
+
+ DELETE FROM employees WHERE id = 3;
+
+ ALTER TABLE employees ALTER COLUMN name VARCHAR(100) NOT NULL;
+
+ ALTER TABLE employees ADD CONSTRAINT CK_age CHECK (age > 17);
+
+ -- GROUP BY WITH HAVING
+
+ SELECT SUM(price) FROM products;
+ SELECT category, SUM(price) FROM products GROUP BY category;
+ SELECT category, SUM(price) AS SUMofCat FROM products GROUP BY category HAVING category = 'office';
+
+
+  SELECT * FROM Customerr;
+-- Variable
+DECLARE @studentname VARCHAR(50);
+SET @studentname = 'Fatima';
+
+SELECT * FROM Customerr WHERE CustomerName = @studentname;
+SELECT @studentname;
+
+DECLARE @stdname VARCHAR(50);
+SET @stdname = 'Ahmed';
+DECLARE @stdcity VARCHAR(50);
+SET @stdcity = 'Lahore';
+
+SELECT * FROM Customer WHERE name = @stdname AND city = @stdcity;
+
+
+-- Custom function
+
+CREATE FUNCTION fn
+()
+RETURNS VARCHAR(100)
+BEGIN
+DECLARE @fullname VARCHAR(100);
+SET @fullname = 'Asjad Hussain'
+RETURN @fullname
+END
+
+SELECT dbo.fn();
+
+
+ALTER FUNCTION getfullname (  @fn VARCHAR(50), @ln VARCHAR(50)  )
+RETURNS VARCHAR(100)
+AS
+BEGIN
+DECLARE @fullname VARCHAR(100);
+SET @fullname = @fn + ' ' + @ln
+RETURN @fullname
+END
+
+SELECT dbo.getfullname();
+SELECT dbo.getfullname('Faraz');
+SELECT dbo.getfullname('Faraz', 'Inam');
+
+
+-- Stored Procedure
+
+ SELECT * FROM Orders
+INNER JOIN Customerr
+ON Orders.CustomerID = Customerr.CustomerID
+INNER JOIN Productt
+ON Orders.ProductID = Productt.ProductID;
+
+
+CREATE PROCEDURE sp_SelMaxPrice_Pro
+AS
+BEGIN
+SELECT ProductName, Brand, Price, QuantitySold FROM products WHERE Price = (SELECT MAX(Price) from Products);
+END
+
+EXEC sp_SelMaxPrice_Pro;
+
+
+ALTER PROCEDURE sp_SUMofficePrice_Pro
+AS
+BEGIN
+SELECT category, SUM(price) AS SUMofCat FROM products GROUP BY category HAVING category = 'Furniture';
+END
+
+EXEC sp_SUMofficePrice_Pro;
+
+sp_helptext sp_SUMofficePrice_Pro;
