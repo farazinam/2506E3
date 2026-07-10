@@ -1,4 +1,4 @@
-
+CREATE DATABASE personal;
 
 USE personal;
 
@@ -495,12 +495,6 @@ SELECT dbo.getfullname('Faraz', 'Inam');
 
 -- Stored Procedure
 
- SELECT * FROM Orders
-INNER JOIN Customerr
-ON Orders.CustomerID = Customerr.CustomerID
-INNER JOIN Productt
-ON Orders.ProductID = Productt.ProductID;
-
 
 CREATE PROCEDURE sp_SelMaxPrice_Pro
 AS
@@ -520,3 +514,83 @@ END
 EXEC sp_SUMofficePrice_Pro;
 
 sp_helptext sp_SUMofficePrice_Pro;
+
+
+ -- ------------------ Day 8 ---------------
+
+ CREATE PROCEDURE sp_COP
+ AS
+ BEGIN
+  SELECT * FROM Orders
+INNER JOIN Customerr
+ON Orders.CustomerID = Customerr.CustomerID
+INNER JOIN Productt
+ON Orders.ProductID = Productt.ProductID;
+ END
+
+EXEC sp_COP;
+
+
+CREATE PROCEDURE sp_COP_para
+@product VARCHAR(100)
+AS
+BEGIN
+SELECT * FROM Orders
+INNER JOIN Customerr
+ON Orders.CustomerID = Customerr.CustomerID
+INNER JOIN Productt
+ON Orders.ProductID = Productt.ProductID
+WHERE ProductName = @product;
+END
+
+EXEC sp_COP_para 'laptop';
+EXEC sp_COP_para 'Headphones';
+
+-- VIEWS
+
+CREATE VIEW vw_SelPro
+AS
+SELECT * FROM Products;
+
+SELECT * FROM Products;
+SELECT * FROM vw_SelPro;
+
+CREATE VIEW vw_Pro_Cols
+AS
+SELECT ProductName, Brand, Price, QuantitySold FROM Products;
+
+ALTER VIEW vw_Pro_Cols
+AS
+SELECT ProductName, Brand, Price, Rating FROM Products;
+
+SELECT * FROM vw_Pro_Cols;
+
+DROP VIEW vw_SelPro;
+
+sp_helptext vw_Pro_Cols;
+
+INSERT INTO vw_Pro_Cols (ProductName, Brand, Price, Rating)
+VALUES ('Mobile', 'Apple', 190000, 4.9);
+
+INSERT INTO vw_Pro_Cols (ProductName, Category, Brand, Price, Stock, QuantitySold, Rating)
+VALUES ('Mobile', 'Electronics', 'Apple', 190000, 25, 35, 4.9);
+
+INSERT INTO Products (ProductName, Category, Brand, Price, Stock, QuantitySold, Rating)
+VALUES ('Mobile', 'Electronics', 'Apple', 190000, 25, 35, 4.9);
+
+
+SELECT * FROM Products;
+
+-- VIEWS with JOIN
+
+CREATE VIEW vw_COP
+AS
+SELECT 
+p.ProductName, p.Price, c.CustomerName, c.City, o.Quantity, o.OrderDate
+FROM Orders o
+INNER JOIN Customerr c
+ON o.CustomerID = c.CustomerID
+INNER JOIN Productt p
+ON o.ProductID = p.ProductID;
+
+SELECT * FROM vw_COP;
