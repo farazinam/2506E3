@@ -594,3 +594,70 @@ INNER JOIN Productt p
 ON o.ProductID = p.ProductID;
 
 SELECT * FROM vw_COP;
+
+ -- ------------------ Day 9 ---------------
+
+ -- TRY CATCH
+ BEGIN TRY
+ PRINT 2/0;
+ END TRY
+ BEGIN CATCH
+ PRINT ' Divide by ZERO Error';
+ END CATCH
+
+ BEGIN TRY
+ DECLARE @x INT = 5, @y INT = 0;
+ PRINT @x/@y;
+ END TRY
+ BEGIN CATCH
+ PRINT ' Divide by ZERO Error';
+ END CATCH
+
+-- BEGIN TRY
+--    DECLARE @x INT = 10, @y INT = 0;
+--    PRINT @x / @y; -- This will cause a divide-by-zero error
+--END TRY
+--BEGIN CATCH
+--    PRINT 'Error Number: ' + CAST(ERROR_NUMBER() AS VARCHAR);
+--    PRINT 'Error Message: ' + ERROR_MESSAGE();
+--    PRINT 'Severity: ' + CAST(ERROR_SEVERITY() AS VARCHAR);
+--    PRINT 'State: ' + CAST(ERROR_STATE() AS VARCHAR);
+--    PRINT 'Line: ' + CAST(ERROR_LINE() AS VARCHAR);
+--END CATCH;
+
+-- TCL (Transaction Control Language)
+
+BEGIN TRANSACTION;
+UPDATE contact
+SET address = 'aptech street'
+WHERE contact_id = 109;
+
+-- either
+COMMIT;
+
+-- or
+ROLLBACK;
+
+SELECT * FROM contact;
+
+BEGIN TRANSACTION;
+INSERT INTO contact (first_name, last_name, email, phone_number, address) 
+VALUES ('Muhammad', 'Aasir', 'aashir@gmail.com', 3133, 'hyderi');
+SAVE TRANSACTION Save1;
+
+INSERT INTO contact (first_name, last_name, email, phone_number, address) 
+VALUES ('Muhammad', 'Arham', 'ahsan@gmail.com', 3144, 'fivestar');
+
+ROLLBACK TRANSACTION Save1;  -- Undo only the update, keeping the insert intact
+
+COMMIT;  -- Saves the inserted record
+
+
+
+-- DCL (Data Control Language)
+
+CREATE LOGIN aptech WITH password = '123';
+CREATE USER farazinam FROM LOGIN aptech;
+
+CREATE LOGIN farazinam WITH password = '123';
+CREATE USER farazinam FROM LOGIN farazinam;
