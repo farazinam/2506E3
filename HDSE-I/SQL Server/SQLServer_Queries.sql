@@ -661,3 +661,115 @@ CREATE USER farazinam FROM LOGIN aptech;
 
 CREATE LOGIN farazinam WITH password = '123';
 CREATE USER farazinam FROM LOGIN farazinam;
+
+
+ -- ------------------ Day 10 [Class Test] ---------------
+
+  -- ------------------ Day 11 ---------------
+
+
+  -- Triggers
+
+  --Types
+  -- 1. DML Triggers
+  -- 2. DDL Triggers
+  -- 3. Login Triggers
+
+
+    -- 1. DML Triggers
+		-- After Trigger
+		-- Instead Of Trigger
+
+-- After Trigger
+
+CREATE TRIGGER trg_AfterIns
+ON contact
+AFTER INSERT
+AS
+BEGIN
+PRINT 'Mubarak ho Record Chala Gya';
+END
+
+INSERT INTO contact (first_name, last_name, email, phone_number, address)
+VALUES ('Muhammad', 'Kashan', 'm.kasham@gmail.com', 1234, 'aptechstreet');
+
+CREATE TRIGGER trg_AfterUpd
+ON contact
+AFTER UPDATE
+AS
+BEGIN
+PRINT 'Mubarak ho Record tabdeel Gya';
+END
+
+UPDATE contact SET email = 'muhammad_kashan@gmail.com'
+WHERE contact_id = 117;
+
+
+CREATE TRIGGER trg_AfterDel
+ON contact
+AFTER DELETE
+AS
+BEGIN
+PRINT 'Mubarak ho Record Delete Gya';
+END
+
+DELETE FROM contact WHERE contact_id = 105;
+
+-- INSTEAD OF
+CREATE TRIGGER trg_insOfDel
+ON contact
+INSTEAD OF DELETE
+AS 
+BEGIN
+PRINT 'Delete Operation is NOT allowed';
+END
+
+DELETE FROM contact WHERE contact_id = 113;
+
+
+		  -- 2. DDL Triggers
+
+CREATE TRIGGER trg_dropTable
+ON DATABASE
+FOR DROP_TABLE
+AS
+BEGIN
+PRINT 'Table Deletion is NOT Allowed';
+ROLLBACK;
+END
+
+DROP TABLE contact;
+DROP TABLE Products;
+
+CREATE TRIGGER trg_createTable
+ON DATABASE
+FOR CREATE_TABLE
+AS
+BEGIN
+PRINT 'Table Creation is NOT Allowed';
+ROLLBACK;
+END
+
+CREATE TABLE student(
+id INT, 
+name VARCHAR(50)
+);
+
+DISABLE TRIGGER trg_dropTable ON DATABASE;
+DISABLE TRIGGER trg_createTable ON DATABASE;
+
+DROP TABLE abc;
+
+
+-- DCL (Data Control Language)
+
+CREATE LOGIN faraz WITH password = '123';
+CREATE USER aptech FROM LOGIN faraz;
+
+GRANT SELECT ON dbo.contact TO aptech;
+
+GRANT SELECT, INSERT, DELETE ON dbo.student TO aptech;
+
+-- REVOKE(To take back the permission)
+REVOKE DELETE on dbo.Employees TO FARAZ;
+
