@@ -1,0 +1,14 @@
+C:\Users\farazinam\source\repos\cSharp_Basics\cSharp_Basics\bin\Debug\net8.0\cSharp_Basics.exe
+C:\Users\farazinam\source\repos\cSharp_Basics\cSharp_Basics\bin\Debug\net8.0\cSharp_Basics.deps.json
+C:\Users\farazinam\source\repos\cSharp_Basics\cSharp_Basics\bin\Debug\net8.0\cSharp_Basics.runtimeconfig.json
+C:\Users\farazinam\source\repos\cSharp_Basics\cSharp_Basics\bin\Debug\net8.0\cSharp_Basics.dll
+C:\Users\farazinam\source\repos\cSharp_Basics\cSharp_Basics\bin\Debug\net8.0\cSharp_Basics.pdb
+C:\Users\farazinam\source\repos\cSharp_Basics\cSharp_Basics\obj\Debug\net8.0\cSharp_Basics.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\farazinam\source\repos\cSharp_Basics\cSharp_Basics\obj\Debug\net8.0\cSharp_Basics.AssemblyInfoInputs.cache
+C:\Users\farazinam\source\repos\cSharp_Basics\cSharp_Basics\obj\Debug\net8.0\cSharp_Basics.AssemblyInfo.cs
+C:\Users\farazinam\source\repos\cSharp_Basics\cSharp_Basics\obj\Debug\net8.0\cSharp_Basics.csproj.CoreCompileInputs.cache
+C:\Users\farazinam\source\repos\cSharp_Basics\cSharp_Basics\obj\Debug\net8.0\cSharp_Basics.dll
+C:\Users\farazinam\source\repos\cSharp_Basics\cSharp_Basics\obj\Debug\net8.0\refint\cSharp_Basics.dll
+C:\Users\farazinam\source\repos\cSharp_Basics\cSharp_Basics\obj\Debug\net8.0\cSharp_Basics.pdb
+C:\Users\farazinam\source\repos\cSharp_Basics\cSharp_Basics\obj\Debug\net8.0\cSharp_Basics.genruntimeconfig.cache
+C:\Users\farazinam\source\repos\cSharp_Basics\cSharp_Basics\obj\Debug\net8.0\ref\cSharp_Basics.dll
