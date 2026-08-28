@@ -1,0 +1,14 @@
+C:\Users\farazinam\source\repos\OOP\Aptech\bin\Debug\net8.0\Aptech.exe
+C:\Users\farazinam\source\repos\OOP\Aptech\bin\Debug\net8.0\Aptech.deps.json
+C:\Users\farazinam\source\repos\OOP\Aptech\bin\Debug\net8.0\Aptech.runtimeconfig.json
+C:\Users\farazinam\source\repos\OOP\Aptech\bin\Debug\net8.0\Aptech.dll
+C:\Users\farazinam\source\repos\OOP\Aptech\bin\Debug\net8.0\Aptech.pdb
+C:\Users\farazinam\source\repos\OOP\Aptech\obj\Debug\net8.0\Aptech.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\farazinam\source\repos\OOP\Aptech\obj\Debug\net8.0\Aptech.AssemblyInfoInputs.cache
+C:\Users\farazinam\source\repos\OOP\Aptech\obj\Debug\net8.0\Aptech.AssemblyInfo.cs
+C:\Users\farazinam\source\repos\OOP\Aptech\obj\Debug\net8.0\Aptech.csproj.CoreCompileInputs.cache
+C:\Users\farazinam\source\repos\OOP\Aptech\obj\Debug\net8.0\Aptech.dll
+C:\Users\farazinam\source\repos\OOP\Aptech\obj\Debug\net8.0\refint\Aptech.dll
+C:\Users\farazinam\source\repos\OOP\Aptech\obj\Debug\net8.0\Aptech.pdb
+C:\Users\farazinam\source\repos\OOP\Aptech\obj\Debug\net8.0\Aptech.genruntimeconfig.cache
+C:\Users\farazinam\source\repos\OOP\Aptech\obj\Debug\net8.0\ref\Aptech.dll

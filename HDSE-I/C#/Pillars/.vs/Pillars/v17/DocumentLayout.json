@@ -1,0 +1,120 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\farazinam\\source\\repos\\Pillars\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{41B3E533-6CF1-41BF-A7CE-F695C568CBA4}|Pillars\\Pillars.csproj|c:\\users\\farazinam\\source\\repos\\pillars\\pillars\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41B3E533-6CF1-41BF-A7CE-F695C568CBA4}|Pillars\\Pillars.csproj|solutionrelative:pillars\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41B3E533-6CF1-41BF-A7CE-F695C568CBA4}|Pillars\\Pillars.csproj|c:\\users\\farazinam\\source\\repos\\pillars\\pillars\\interfaces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41B3E533-6CF1-41BF-A7CE-F695C568CBA4}|Pillars\\Pillars.csproj|solutionrelative:pillars\\interfaces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41B3E533-6CF1-41BF-A7CE-F695C568CBA4}|Pillars\\Pillars.csproj|c:\\users\\farazinam\\source\\repos\\pillars\\pillars\\polymorphism.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41B3E533-6CF1-41BF-A7CE-F695C568CBA4}|Pillars\\Pillars.csproj|solutionrelative:pillars\\polymorphism.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41B3E533-6CF1-41BF-A7CE-F695C568CBA4}|Pillars\\Pillars.csproj|c:\\users\\farazinam\\source\\repos\\pillars\\pillars\\encapsulation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41B3E533-6CF1-41BF-A7CE-F695C568CBA4}|Pillars\\Pillars.csproj|solutionrelative:pillars\\encapsulation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41B3E533-6CF1-41BF-A7CE-F695C568CBA4}|Pillars\\Pillars.csproj|c:\\users\\farazinam\\source\\repos\\pillars\\pillars\\abstraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41B3E533-6CF1-41BF-A7CE-F695C568CBA4}|Pillars\\Pillars.csproj|solutionrelative:pillars\\abstraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41B3E533-6CF1-41BF-A7CE-F695C568CBA4}|Pillars\\Pillars.csproj|c:\\users\\farazinam\\source\\repos\\pillars\\pillars\\inheritance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41B3E533-6CF1-41BF-A7CE-F695C568CBA4}|Pillars\\Pillars.csproj|solutionrelative:pillars\\inheritance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Interfaces.cs",
+              "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\Pillars\\Pillars\\Interfaces.cs",
+              "RelativeDocumentMoniker": "Pillars\\Interfaces.cs",
+              "ToolTip": "C:\\Users\\farazinam\\source\\repos\\Pillars\\Pillars\\Interfaces.cs",
+              "RelativeToolTip": "Pillars\\Interfaces.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAowBcAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-28T11:17:29.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\Pillars\\Pillars\\Program.cs",
+              "RelativeDocumentMoniker": "Pillars\\Program.cs",
+              "ToolTip": "C:\\Users\\farazinam\\source\\repos\\Pillars\\Pillars\\Program.cs",
+              "RelativeToolTip": "Pillars\\Program.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAIwG8AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-24T11:48:27.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Abstraction.cs",
+              "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\Pillars\\Pillars\\Abstraction.cs",
+              "RelativeDocumentMoniker": "Pillars\\Abstraction.cs",
+              "ToolTip": "C:\\Users\\farazinam\\source\\repos\\Pillars\\Pillars\\Abstraction.cs",
+              "RelativeToolTip": "Pillars\\Abstraction.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAmwDYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-24T11:03:05.057Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Encapsulation.cs",
+              "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\Pillars\\Pillars\\Encapsulation.cs",
+              "RelativeDocumentMoniker": "Pillars\\Encapsulation.cs",
+              "ToolTip": "C:\\Users\\farazinam\\source\\repos\\Pillars\\Pillars\\Encapsulation.cs",
+              "RelativeToolTip": "Pillars\\Encapsulation.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAgwGgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-21T11:34:25.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Polymorphism.cs",
+              "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\Pillars\\Pillars\\Polymorphism.cs",
+              "RelativeDocumentMoniker": "Pillars\\Polymorphism.cs",
+              "ToolTip": "C:\\Users\\farazinam\\source\\repos\\Pillars\\Pillars\\Polymorphism.cs",
+              "RelativeToolTip": "Pillars\\Polymorphism.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T10:16:26.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Inheritance.cs",
+              "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\Pillars\\Pillars\\Inheritance.cs",
+              "RelativeDocumentMoniker": "Pillars\\Inheritance.cs",
+              "ToolTip": "C:\\Users\\farazinam\\source\\repos\\Pillars\\Pillars\\Inheritance.cs",
+              "RelativeToolTip": "Pillars\\Inheritance.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAzwH8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T10:14:09.285Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

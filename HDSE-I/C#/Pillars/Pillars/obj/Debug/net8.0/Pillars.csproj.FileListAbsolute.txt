@@ -1,0 +1,14 @@
+C:\Users\farazinam\source\repos\Pillars\Pillars\bin\Debug\net8.0\Pillars.exe
+C:\Users\farazinam\source\repos\Pillars\Pillars\bin\Debug\net8.0\Pillars.deps.json
+C:\Users\farazinam\source\repos\Pillars\Pillars\bin\Debug\net8.0\Pillars.runtimeconfig.json
+C:\Users\farazinam\source\repos\Pillars\Pillars\bin\Debug\net8.0\Pillars.dll
+C:\Users\farazinam\source\repos\Pillars\Pillars\bin\Debug\net8.0\Pillars.pdb
+C:\Users\farazinam\source\repos\Pillars\Pillars\obj\Debug\net8.0\Pillars.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\farazinam\source\repos\Pillars\Pillars\obj\Debug\net8.0\Pillars.AssemblyInfoInputs.cache
+C:\Users\farazinam\source\repos\Pillars\Pillars\obj\Debug\net8.0\Pillars.AssemblyInfo.cs
+C:\Users\farazinam\source\repos\Pillars\Pillars\obj\Debug\net8.0\Pillars.csproj.CoreCompileInputs.cache
+C:\Users\farazinam\source\repos\Pillars\Pillars\obj\Debug\net8.0\Pillars.dll
+C:\Users\farazinam\source\repos\Pillars\Pillars\obj\Debug\net8.0\refint\Pillars.dll
+C:\Users\farazinam\source\repos\Pillars\Pillars\obj\Debug\net8.0\Pillars.pdb
+C:\Users\farazinam\source\repos\Pillars\Pillars\obj\Debug\net8.0\Pillars.genruntimeconfig.cache
+C:\Users\farazinam\source\repos\Pillars\Pillars\obj\Debug\net8.0\ref\Pillars.dll

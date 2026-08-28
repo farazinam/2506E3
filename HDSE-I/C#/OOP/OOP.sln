@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35919.96
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP", "OOP\OOP.csproj", "{DD507B7F-778A-45C3-9BB4-2FE116703F90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aptech", "Aptech\Aptech.csproj", "{B1B0796F-213C-4124-BB37-7C089951ED9B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD507B7F-778A-45C3-9BB4-2FE116703F90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD507B7F-778A-45C3-9BB4-2FE116703F90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD507B7F-778A-45C3-9BB4-2FE116703F90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD507B7F-778A-45C3-9BB4-2FE116703F90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1B0796F-213C-4124-BB37-7C089951ED9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1B0796F-213C-4124-BB37-7C089951ED9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1B0796F-213C-4124-BB37-7C089951ED9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1B0796F-213C-4124-BB37-7C089951ED9B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B32EAC6E-F9C0-4C38-9CD9-21D4484749ED}
+	EndGlobalSection
+EndGlobal
