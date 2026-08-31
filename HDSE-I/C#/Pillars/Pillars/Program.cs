@@ -104,16 +104,85 @@
             //t.getDetails();
 
 
-            Console.WriteLine("\n _________Bus Details__________ \n");
-            Bus b = new Bus();
-            b.start();
-            b.stop();
+            //Console.WriteLine("\n _________Bus Details__________ \n");
+            //Bus b = new Bus();
+            //b.start();
+            //b.stop();
 
-            Console.WriteLine("\n _________Container Details__________ \n");
-            Container c = new Container();
-            c.start();
-            c.stop();
+            //Console.WriteLine("\n _________Container Details__________ \n");
+            //Container c = new Container();
+            //c.start();
+            //c.stop();
 
+
+            //MultiFunctionDevice mfd = new MultiFunctionDevice();
+            //IPrinter printer = mfd;
+            //printer.print();
+
+            //IScanner scanner = mfd;
+            //scanner.print();
+
+            //PrintMethod pm = new PrintMethod();
+            //pm.output1();
+            //pm.output2();
+            //pm.output3();
+
+
+
+            // --------------- Exception Handling ------------------
+            //without label
+            try
+            {
+                Console.WriteLine("Enter a Number");
+                decimal num1 = int.Parse(Console.ReadLine());
+                Console.WriteLine("\n Enter another Number");
+                decimal num2 = int.Parse(Console.ReadLine());
+                decimal output = num1 / num2;
+                Console.WriteLine(output);
+            }
+            catch
+            {
+                Console.WriteLine("Denomintaor Should be non Zero");
+            }
+
+
+            //with label
+            //try
+            //{
+            //    Console.WriteLine("Enter a Number");
+            //    decimal num1 = int.Parse(Console.ReadLine());
+            //    Console.WriteLine("\n Enter another Number");
+            //    decimal num2 = int.Parse(Console.ReadLine());
+            //    decimal output = num1 / num2;
+            //    Console.WriteLine(output);
+            //}
+            //catch (DivideByZeroException ex)
+            //{
+            //    Console.WriteLine("Denomintaor Should be non Zero \n" + ex.ToString());
+            //}
+
+            // 
+            //try
+            //{
+            //    int[] arr = new int[2];
+            //    arr[0] = 10;
+            //    arr[1] = 20;
+            //    arr[2] = 30;
+            //    Console.WriteLine(arr[0]);
+            //    Console.WriteLine(arr[1]);
+            //    Console.WriteLine(arr[2]);
+            //}
+            //catch (IndexOutOfRangeException ex)
+            //{
+            //    Console.WriteLine(ex.ToString());
+            //}
+            //catch (DivideByZeroException ex)
+            //{
+            //    Console.WriteLine(ex.ToString());
+            //}
         }
-    }
+
+
+}
+    
 }

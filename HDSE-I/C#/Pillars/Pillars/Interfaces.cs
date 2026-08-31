@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace Pillars
 {
+
+    //Implicit Interface
     public interface IVehicle
     {
         void start();
@@ -41,4 +43,60 @@ namespace Pillars
     }
 
 
+
+    //Explicit Interface
+    public interface IPrinter
+    {
+        void print();
+    }
+    public interface IScanner
+    {
+        void print();
+    }
+
+    public class MultiFunctionDevice : IPrinter , IScanner
+    {
+        void IPrinter.print()
+        {
+            Console.WriteLine("Printer is Printing...");
+        }
+
+        void IScanner.print()
+        {
+            Console.WriteLine("Scanner is Scanning...");
+        }
+    }
+
+
+    //interface inheritance
+    public interface Inter1
+    {
+        void output1();
+    }
+
+    public interface Inter2
+    {
+        void output2();
+    }
+
+    public interface Inter3 : Inter1 , Inter2
+    {
+        void output3();
+    }
+
+    public class PrintMethod : Inter3
+    {
+        public void output1 ()
+        {
+            Console.WriteLine("This is a Method of Interface 1");
+        }
+        public void output2 ()
+        {
+            Console.WriteLine("This is a Method of Interface 2");
+        }
+        public void output3 ()
+        {
+            Console.WriteLine("This is a Method of Interface 3");
+        }
+    }
 }
