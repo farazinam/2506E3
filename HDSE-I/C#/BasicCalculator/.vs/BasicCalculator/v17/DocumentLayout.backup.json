@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\farazinam\\source\\repos\\BasicCalculator\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{69D14850-E1E3-4104-935F-5FC981E562BC}|BasicCalculator\\BasicCalculator.csproj|c:\\users\\farazinam\\source\\repos\\basiccalculator\\basiccalculator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69D14850-E1E3-4104-935F-5FC981E562BC}|BasicCalculator\\BasicCalculator.csproj|solutionrelative:basiccalculator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69D14850-E1E3-4104-935F-5FC981E562BC}|BasicCalculator\\BasicCalculator.csproj|c:\\users\\farazinam\\source\\repos\\basiccalculator\\basiccalculator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{69D14850-E1E3-4104-935F-5FC981E562BC}|BasicCalculator\\BasicCalculator.csproj|solutionrelative:basiccalculator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 235,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\BasicCalculator\\BasicCalculator\\Form1.cs",
+              "RelativeDocumentMoniker": "BasicCalculator\\Form1.cs",
+              "ToolTip": "C:\\Users\\farazinam\\source\\repos\\BasicCalculator\\BasicCalculator\\Form1.cs",
+              "RelativeToolTip": "BasicCalculator\\Form1.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAQwFEAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-04T10:35:53.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\BasicCalculator\\BasicCalculator\\Form1.cs",
+              "RelativeDocumentMoniker": "BasicCalculator\\Form1.cs",
+              "ToolTip": "C:\\Users\\farazinam\\source\\repos\\BasicCalculator\\BasicCalculator\\Form1.cs [Design]",
+              "RelativeToolTip": "BasicCalculator\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-04T10:32:17.293Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
