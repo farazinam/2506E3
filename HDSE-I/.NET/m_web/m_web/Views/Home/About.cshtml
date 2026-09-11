@@ -1,0 +1,14 @@
+﻿<h2> This is About Page</h2>
+
+@ViewBag.CurrentDate
+
+<br />
+
+@foreach (string m in ViewBag.Mahinay)
+{
+	@m <br />;
+}
+
+<h2> @ViewBag.center </h2>
+
+<h4> @TempData["Msg"] </h4>

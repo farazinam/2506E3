@@ -1,0 +1,39 @@
+﻿<h1>
+	Welcome to Contact Page
+</h1>
+
+@{
+	string name = "Faraz Inam";
+	<p> @name; </p>
+
+	for (int i = 1; i <= 10; i++)
+	{
+		<li>@i</li>
+	}
+
+	<p>Today's Date is 	@DateTime.Now; </p>
+
+	if (DateTime.Now.Hour < 12)
+	{
+		<h4> Good Morning</h4>
+	}
+	else
+	{
+		<h3> Good Evening</h3>
+	}
+
+	string[] days =
+			{ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
+
+	// <li> @days[0] </li>
+
+	foreach (string d in days)
+	{
+		
+			<li> @d </li>
+	}
+
+	<h4> @TempData["Msg"] </h4>
+
+
+}

@@ -1,0 +1,133 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\farazinam\\source\\repos\\m_web\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CEE8C689-4AC2-4EA2-A6A3-446B83BFFA4B}|m_web\\m_web.csproj|c:\\users\\farazinam\\source\\repos\\m_web\\m_web\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CEE8C689-4AC2-4EA2-A6A3-446B83BFFA4B}|m_web\\m_web.csproj|solutionrelative:m_web\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEE8C689-4AC2-4EA2-A6A3-446B83BFFA4B}|m_web\\m_web.csproj|c:\\users\\farazinam\\source\\repos\\m_web\\m_web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEE8C689-4AC2-4EA2-A6A3-446B83BFFA4B}|m_web\\m_web.csproj|solutionrelative:m_web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEE8C689-4AC2-4EA2-A6A3-446B83BFFA4B}|m_web\\m_web.csproj|c:\\users\\farazinam\\source\\repos\\m_web\\m_web\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CEE8C689-4AC2-4EA2-A6A3-446B83BFFA4B}|m_web\\m_web.csproj|solutionrelative:m_web\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEE8C689-4AC2-4EA2-A6A3-446B83BFFA4B}|m_web\\m_web.csproj|c:\\users\\farazinam\\source\\repos\\m_web\\m_web\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CEE8C689-4AC2-4EA2-A6A3-446B83BFFA4B}|m_web\\m_web.csproj|solutionrelative:m_web\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEE8C689-4AC2-4EA2-A6A3-446B83BFFA4B}|m_web\\m_web.csproj|c:\\users\\farazinam\\source\\repos\\m_web\\m_web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CEE8C689-4AC2-4EA2-A6A3-446B83BFFA4B}|m_web\\m_web.csproj|solutionrelative:m_web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEE8C689-4AC2-4EA2-A6A3-446B83BFFA4B}|m_web\\m_web.csproj|c:\\users\\farazinam\\source\\repos\\m_web\\m_web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CEE8C689-4AC2-4EA2-A6A3-446B83BFFA4B}|m_web\\m_web.csproj|solutionrelative:m_web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEE8C689-4AC2-4EA2-A6A3-446B83BFFA4B}|m_web\\m_web.csproj|c:\\users\\farazinam\\source\\repos\\m_web\\m_web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEE8C689-4AC2-4EA2-A6A3-446B83BFFA4B}|m_web\\m_web.csproj|solutionrelative:m_web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 235,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\m_web\\m_web\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "m_web\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\farazinam\\source\\repos\\m_web\\m_web\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "m_web\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-11T11:19:29.438Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\m_web\\m_web\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "m_web\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\farazinam\\source\\repos\\m_web\\m_web\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "m_web\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-11T10:28:33.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\m_web\\m_web\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "m_web\\Views\\Home\\About.cshtml",
+              "ToolTip": "C:\\Users\\farazinam\\source\\repos\\m_web\\m_web\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "m_web\\Views\\Home\\About.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-11T10:26:15.356Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\m_web\\m_web\\Program.cs",
+              "RelativeDocumentMoniker": "m_web\\Program.cs",
+              "ToolTip": "C:\\Users\\farazinam\\source\\repos\\m_web\\m_web\\Program.cs",
+              "RelativeToolTip": "m_web\\Program.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwB4AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-09T11:34:21.342Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\m_web\\m_web\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "m_web\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\farazinam\\source\\repos\\m_web\\m_web\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "m_web\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-09T11:11:13.625Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\m_web\\m_web\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "m_web\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "C:\\Users\\farazinam\\source\\repos\\m_web\\m_web\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "m_web\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACMAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-09T11:06:44.324Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\m_web\\m_web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "m_web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\farazinam\\source\\repos\\m_web\\m_web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "m_web\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABwAAABtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-09T10:52:34.155Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
