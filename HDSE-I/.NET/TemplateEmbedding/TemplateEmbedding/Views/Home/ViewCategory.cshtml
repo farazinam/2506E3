@@ -1,0 +1,44 @@
+﻿@model IEnumerable<TemplateEmbedding.Models.Category>
+
+<div class="row mt-5">
+    <div class="col-12">
+
+        <!-- Recent Order Table -->
+        <div class="card card-table-border-none recent-orders" id="recent-orders">
+            <div class="card-header justify-content-between">
+                <h2>All Categories</h2>
+                <div class="date-range-report ">
+                    <span></span>
+                </div>
+            </div>
+            <div class="card-body pt-0 pb-5">
+                <table class="table card-table table-responsive table-responsive-large" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th style="text-align: center">Category ID</th>
+                            <th style="text-align: center">Category Name</th>
+                            <th style="text-align: center">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var records in Model)
+                        {
+                            <tr>
+                                <td style="text-align: center"> @records.CategoryId </td>
+                                <td style="text-align: center">
+                                    <a class="text-dark" href=""> @records.CategoryName </a>
+                                </td>
+
+                                <td style="text-align: center">
+                                    <a> <span class="badge badge-warning">Edit</span> </a>
+                                    <a asp-route-id="@records.CategoryId" asp-controller="Home" asp-action="DeleteCategory"> <span class="badge badge-danger">Delete</span> </a>
+                                </td> 
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>
