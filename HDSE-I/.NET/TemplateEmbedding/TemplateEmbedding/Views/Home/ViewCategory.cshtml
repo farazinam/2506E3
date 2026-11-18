@@ -6,6 +6,8 @@
         <!-- Recent Order Table -->
         <div class="card card-table-border-none recent-orders" id="recent-orders">
             <div class="card-header justify-content-between">
+                <p class="text-success"> @TempData["Success"]</p>
+                <p class="text-danger"> @TempData["Error"]</p>
                 <h2>All Categories</h2>
                 <div class="date-range-report ">
                     <span></span>
@@ -30,7 +32,7 @@
                                 </td>
 
                                 <td style="text-align: center">
-                                    <a> <span class="badge badge-warning">Edit</span> </a>
+                                    <a asp-route-id="@records.CategoryId" asp-controller="Home" asp-action="UpdateCategory"> <span class="badge badge-warning">Edit</span> </a>
                                     <a asp-route-id="@records.CategoryId" asp-controller="Home" asp-action="DeleteCategory"> <span class="badge badge-danger">Delete</span> </a>
                                 </td> 
                             </tr>

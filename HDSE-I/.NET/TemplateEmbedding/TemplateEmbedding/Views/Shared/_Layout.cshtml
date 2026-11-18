@@ -141,13 +141,13 @@
                 </li>
 
                 <li class="has-sub ">
-                  <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#app"
-                    aria-expanded="false" aria-controls="app">
+                  <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#cat"
+                    aria-expanded="false" aria-controls="cat">
                     <i class="mdi mdi-pencil-box-multiple"></i>
                     <span class="nav-text">Category</span> <b class="caret"></b>
                   </a>
 
-                  <ul class="collapse " id="app" data-parent="#sidebar-menu">
+                  <ul class="collapse " id="cat" data-parent="#sidebar-menu">
                     <div class="sub-menu">
                       <li class="">
                         <a class="sidenav-item-link" asp-controller="Home" asp-action="AddCategory">
@@ -163,6 +163,57 @@
                     </div>
                   </ul>
                 </li>
+
+
+                <li class="has-sub ">
+                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#brand"
+                       aria-expanded="false" aria-controls="brand">
+                        <i class="mdi mdi-pencil-box-multiple"></i>
+                        <span class="nav-text">Brand</span> <b class="caret"></b>
+                    </a>
+
+                    <ul class="collapse " id="brand" data-parent="#sidebar-menu">
+                    <div class="sub-menu">
+                    <li class="">
+                        <a class="sidenav-item-link" asp-controller="Home" asp-action="AddBrand">
+                            <span class="nav-text">Add Brand</span>
+                        </a>
+                    </li>
+
+                    <li class="">
+                        <a class="sidenav-item-link" asp-controller="Home" asp-action="ViewBrand">
+                            <span class="nav-text">View Brand</span>
+                        </a>
+                    </li>
+            </div>
+            </ul>
+            </li>
+
+
+
+                <li class="has-sub ">
+                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#pro"
+                       aria-expanded="false" aria-controls="pro">
+                        <i class="mdi mdi-pencil-box-multiple"></i>
+                        <span class="nav-text">Product</span> <b class="caret"></b>
+                    </a>
+
+                    <ul class="collapse " id="pro" data-parent="#sidebar-menu">
+                        <div class="sub-menu">
+                        <li class="">
+                            <a class="sidenav-item-link" asp-controller="Home" asp-action="AddProduct">
+                                <span class="nav-text">Add Product</span>
+                            </a>
+                        </li>
+
+                        <li class="">
+                            <a class="sidenav-item-link" asp-controller="Home" asp-action="ViewProduct">
+                                <span class="nav-text">View Product</span>
+                            </a>
+                        </li>
+            </div>
+            </ul>
+            </li>
 
                 <!-- <li class="section-title">
                   UI Elements
@@ -1193,7 +1244,8 @@
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
-        </main>
+            @RenderSection("script", required: false)
+            </main>
     </div>
 
         <!-- Footer -->

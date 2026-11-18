@@ -1,0 +1,30 @@
+﻿@model TemplateEmbedding.Models.Category
+
+<div class="row mt-5">
+	<div class="col-lg-6">
+		<div class="card card-default">
+			<div class="card-header card-header-border-bottom">
+				<h2>Category</h2>
+			</div>
+
+			<div class="card-body">
+				<form asp-controller="Home" asp-action="UpdateCategory" method="post">
+					<div class="form-row">
+						<div class="col-md-12 mb-3">
+							<input type="hidden" asp-for="CategoryId" />
+							<label for="validationServer01">Category Name</label>
+							<input type="text" class="form-control" id="validationServer01" asp-for="CategoryName">
+							<div class="valid-feedback">
+								Looks good!
+							</div>
+						</div>
+
+					</div>
+
+					<button class="btn btn-primary" type="submit">Update Category</button>
+				</form>
+			</div>
+		</div>
+	</div>	
+
+</div>

@@ -11,6 +11,7 @@ namespace TemplateEmbedding
             // Add services to the container.
             builder.Services.AddControllersWithViews();
             builder.Services.AddDbContext<MiniprojectContext>();
+            builder.Services.AddSession();
 
             var app = builder.Build();
 
@@ -28,10 +29,11 @@ namespace TemplateEmbedding
             app.UseRouting();
 
             app.UseAuthorization();
+            app.UseSession();
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=User}/{action=Index}/{id?}");
 
             app.Run();
         }

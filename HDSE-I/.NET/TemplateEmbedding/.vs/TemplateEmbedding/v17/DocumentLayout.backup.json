@@ -3,32 +3,100 @@
   "WorkspaceRootPath": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|c:\\users\\farazinam\\source\\repos\\templateembedding\\templateembedding\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|solutionrelative:templateembedding\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|c:\\users\\farazinam\\source\\repos\\templateembedding\\templateembedding\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|solutionrelative:templateembedding\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|c:\\users\\farazinam\\source\\repos\\templateembedding\\templateembedding\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|solutionrelative:templateembedding\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|c:\\users\\farazinam\\source\\repos\\templateembedding\\templateembedding\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|solutionrelative:templateembedding\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|c:\\users\\farazinam\\source\\repos\\templateembedding\\templateembedding\\views\\home\\viewcategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|solutionrelative:templateembedding\\views\\home\\viewcategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|c:\\users\\farazinam\\source\\repos\\templateembedding\\templateembedding\\views\\user\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|solutionrelative:templateembedding\\views\\user\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|c:\\users\\farazinam\\source\\repos\\templateembedding\\templateembedding\\views\\user\\singleproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|solutionrelative:templateembedding\\views\\user\\singleproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|c:\\users\\farazinam\\source\\repos\\templateembedding\\templateembedding\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|solutionrelative:templateembedding\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|c:\\users\\farazinam\\source\\repos\\templateembedding\\templateembedding\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|solutionrelative:templateembedding\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|c:\\users\\farazinam\\source\\repos\\templateembedding\\templateembedding\\models\\miniprojectcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|solutionrelative:templateembedding\\models\\miniprojectcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|c:\\users\\farazinam\\source\\repos\\templateembedding\\templateembedding\\views\\auth\\signin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|solutionrelative:templateembedding\\views\\auth\\signin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|c:\\users\\farazinam\\source\\repos\\templateembedding\\templateembedding\\views\\auth\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|solutionrelative:templateembedding\\views\\auth\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|c:\\users\\farazinam\\source\\repos\\templateembedding\\templateembedding\\views\\home\\addproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|solutionrelative:templateembedding\\views\\home\\addproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|c:\\users\\farazinam\\source\\repos\\templateembedding\\templateembedding\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|solutionrelative:templateembedding\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|c:\\users\\farazinam\\source\\repos\\templateembedding\\templateembedding\\views\\home\\addcategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|solutionrelative:templateembedding\\views\\home\\addcategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|c:\\users\\farazinam\\source\\repos\\templateembedding\\templateembedding\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|solutionrelative:templateembedding\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|c:\\users\\farazinam\\source\\repos\\templateembedding\\templateembedding\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|solutionrelative:templateembedding\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|c:\\users\\farazinam\\source\\repos\\templateembedding\\templateembedding\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|solutionrelative:templateembedding\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|c:\\users\\farazinam\\source\\repos\\templateembedding\\templateembedding\\models\\miniprojectcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|solutionrelative:templateembedding\\models\\miniprojectcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|c:\\users\\farazinam\\source\\repos\\templateembedding\\templateembedding\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|solutionrelative:templateembedding\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|c:\\users\\farazinam\\source\\repos\\templateembedding\\templateembedding\\views\\home\\viewbrand.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|solutionrelative:templateembedding\\views\\home\\viewbrand.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|c:\\users\\farazinam\\source\\repos\\templateembedding\\templateembedding\\models\\brand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|solutionrelative:templateembedding\\models\\brand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|c:\\users\\farazinam\\source\\repos\\templateembedding\\templateembedding\\views\\shared\\_user.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|solutionrelative:templateembedding\\views\\shared\\_user.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|c:\\users\\farazinam\\source\\repos\\templateembedding\\templateembedding\\views\\home\\viewcategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|solutionrelative:templateembedding\\views\\home\\viewcategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|c:\\users\\farazinam\\source\\repos\\templateembedding\\templateembedding\\views\\home\\viewproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|solutionrelative:templateembedding\\views\\home\\viewproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|c:\\users\\farazinam\\source\\repos\\templateembedding\\templateembedding\\views\\home\\updateproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|solutionrelative:templateembedding\\views\\home\\updateproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|c:\\users\\farazinam\\source\\repos\\templateembedding\\templateembedding\\views\\home\\updatecategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|solutionrelative:templateembedding\\views\\home\\updatecategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|c:\\users\\farazinam\\source\\repos\\templateembedding\\templateembedding\\views\\user\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|solutionrelative:templateembedding\\views\\user\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{544413CF-CACB-4014-9BBA-002EB1D7C572}|TemplateEmbedding\\TemplateEmbedding.csproj|c:\\users\\farazinam\\source\\repos\\templateembedding\\templateembedding\\templateembedding.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -46,24 +114,292 @@
       "DocumentGroups": [
         {
           "DockedWidth": 235,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Cart.cshtml",
+              "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Views\\User\\Cart.cshtml",
+              "RelativeDocumentMoniker": "TemplateEmbedding\\Views\\User\\Cart.cshtml",
+              "ToolTip": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Views\\User\\Cart.cshtml",
+              "RelativeToolTip": "TemplateEmbedding\\Views\\User\\Cart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-16T11:04:18.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Program.cs",
+              "RelativeDocumentMoniker": "TemplateEmbedding\\Program.cs",
+              "ToolTip": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Program.cs*",
+              "RelativeToolTip": "TemplateEmbedding\\Program.cs*",
+              "ViewState": "AgIAABMAAAAAAAAAAAAiwCMAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-23T10:45:11.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "TemplateEmbedding\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "TemplateEmbedding\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAqwJ0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-18T11:34:49.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Views\\User\\Index.cshtml",
+              "RelativeDocumentMoniker": "TemplateEmbedding\\Views\\User\\Index.cshtml",
+              "ToolTip": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Views\\User\\Index.cshtml",
+              "RelativeToolTip": "TemplateEmbedding\\Views\\User\\Index.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAGIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-28T11:54:53.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SingleProduct.cshtml",
+              "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Views\\User\\SingleProduct.cshtml",
+              "RelativeDocumentMoniker": "TemplateEmbedding\\Views\\User\\SingleProduct.cshtml",
+              "ToolTip": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Views\\User\\SingleProduct.cshtml",
+              "RelativeToolTip": "TemplateEmbedding\\Views\\User\\SingleProduct.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB4AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-14T11:51:00.625Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "TemplateEmbedding\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Controllers\\UserController.cs",
+              "RelativeToolTip": "TemplateEmbedding\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T11:39:44.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MiniprojectContext.cs",
+              "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Models\\MiniprojectContext.cs",
+              "RelativeDocumentMoniker": "TemplateEmbedding\\Models\\MiniprojectContext.cs",
+              "ToolTip": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Models\\MiniprojectContext.cs",
+              "RelativeToolTip": "TemplateEmbedding\\Models\\MiniprojectContext.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-23T10:36:25.8Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SignIn.cshtml",
+              "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Views\\Auth\\SignIn.cshtml",
+              "RelativeDocumentMoniker": "TemplateEmbedding\\Views\\Auth\\SignIn.cshtml",
+              "ToolTip": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Views\\Auth\\SignIn.cshtml",
+              "RelativeToolTip": "TemplateEmbedding\\Views\\Auth\\SignIn.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAEgAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-23T10:21:50.152Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "TemplateEmbedding\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "TemplateEmbedding\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAkwEwAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T11:04:05.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AddProduct.cshtml",
+              "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Views\\Home\\AddProduct.cshtml",
+              "RelativeDocumentMoniker": "TemplateEmbedding\\Views\\Home\\AddProduct.cshtml",
+              "ToolTip": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Views\\Home\\AddProduct.cshtml",
+              "RelativeToolTip": "TemplateEmbedding\\Views\\Home\\AddProduct.cshtml",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAowBEAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-02T11:22:36.793Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Models\\User.cs",
+              "RelativeDocumentMoniker": "TemplateEmbedding\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Models\\User.cs",
+              "RelativeToolTip": "TemplateEmbedding\\Models\\User.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAowA8AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-21T10:20:20.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Signup.cshtml",
+              "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Views\\Auth\\Signup.cshtml",
+              "RelativeDocumentMoniker": "TemplateEmbedding\\Views\\Auth\\Signup.cshtml",
+              "ToolTip": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Views\\Auth\\Signup.cshtml",
+              "RelativeToolTip": "TemplateEmbedding\\Views\\Auth\\Signup.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAEoAAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-19T11:04:34.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Models\\Category.cs",
               "RelativeDocumentMoniker": "TemplateEmbedding\\Models\\Category.cs",
               "ToolTip": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Models\\Category.cs",
               "RelativeToolTip": "TemplateEmbedding\\Models\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-25T10:16:16.348Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-25T10:16:16.348Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "TemplateEmbedding\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Models\\Product.cs",
+              "RelativeToolTip": "TemplateEmbedding\\Models\\Product.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAjwBQAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-05T10:12:25.629Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "TemplateEmbedding\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "TemplateEmbedding\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAANIEAAAAAAAAAADwv94EAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-16T10:57:06.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AddCategory.cshtml",
+              "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Views\\Home\\AddCategory.cshtml",
+              "RelativeDocumentMoniker": "TemplateEmbedding\\Views\\Home\\AddCategory.cshtml",
+              "ToolTip": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Views\\Home\\AddCategory.cshtml",
+              "RelativeToolTip": "TemplateEmbedding\\Views\\Home\\AddCategory.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-18T11:35:39.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ViewBrand.cshtml",
+              "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Views\\Home\\ViewBrand.cshtml",
+              "RelativeDocumentMoniker": "TemplateEmbedding\\Views\\Home\\ViewBrand.cshtml",
+              "ToolTip": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Views\\Home\\ViewBrand.cshtml",
+              "RelativeToolTip": "TemplateEmbedding\\Views\\Home\\ViewBrand.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-28T11:53:29.572Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "_User.cshtml",
+              "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Views\\Shared\\_User.cshtml",
+              "RelativeDocumentMoniker": "TemplateEmbedding\\Views\\Shared\\_User.cshtml",
+              "ToolTip": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Views\\Shared\\_User.cshtml",
+              "RelativeToolTip": "TemplateEmbedding\\Views\\Shared\\_User.cshtml",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAcwGQAAAB4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-28T11:19:49.743Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Brand.cs",
+              "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Models\\Brand.cs",
+              "RelativeDocumentMoniker": "TemplateEmbedding\\Models\\Brand.cs",
+              "ToolTip": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Models\\Brand.cs",
+              "RelativeToolTip": "TemplateEmbedding\\Models\\Brand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-28T10:43:38.916Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ViewCategory.cshtml",
+              "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Views\\Home\\ViewCategory.cshtml",
+              "RelativeDocumentMoniker": "TemplateEmbedding\\Views\\Home\\ViewCategory.cshtml",
+              "ToolTip": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Views\\Home\\ViewCategory.cshtml",
+              "RelativeToolTip": "TemplateEmbedding\\Views\\Home\\ViewCategory.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-21T10:15:11.683Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ViewProduct.cshtml",
+              "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Views\\Home\\ViewProduct.cshtml",
+              "RelativeDocumentMoniker": "TemplateEmbedding\\Views\\Home\\ViewProduct.cshtml",
+              "ToolTip": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Views\\Home\\ViewProduct.cshtml",
+              "RelativeToolTip": "TemplateEmbedding\\Views\\Home\\ViewProduct.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABMAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-07T11:20:07.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UpdateCategory.cshtml",
+              "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Views\\Home\\UpdateCategory.cshtml",
+              "RelativeDocumentMoniker": "TemplateEmbedding\\Views\\Home\\UpdateCategory.cshtml",
+              "ToolTip": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Views\\Home\\UpdateCategory.cshtml",
+              "RelativeToolTip": "TemplateEmbedding\\Views\\Home\\UpdateCategory.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAA8AAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-28T10:17:03.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UpdateProduct.cshtml",
+              "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Views\\Home\\UpdateProduct.cshtml",
+              "RelativeDocumentMoniker": "TemplateEmbedding\\Views\\Home\\UpdateProduct.cshtml",
+              "ToolTip": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Views\\Home\\UpdateProduct.cshtml",
+              "RelativeToolTip": "TemplateEmbedding\\Views\\Home\\UpdateProduct.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-09T11:10:04.411Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "TemplateEmbedding.csproj",
               "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\TemplateEmbedding.csproj",
               "RelativeDocumentMoniker": "TemplateEmbedding\\TemplateEmbedding.csproj",
@@ -75,83 +411,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ViewCategory.cshtml",
-              "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Views\\Home\\ViewCategory.cshtml",
-              "RelativeDocumentMoniker": "TemplateEmbedding\\Views\\Home\\ViewCategory.cshtml",
-              "ToolTip": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Views\\Home\\ViewCategory.cshtml",
-              "RelativeToolTip": "TemplateEmbedding\\Views\\Home\\ViewCategory.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACEAAAByAAAAAAAAAA==",
+              "DocumentIndex": 23,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Views\\User\\About.cshtml",
+              "RelativeDocumentMoniker": "TemplateEmbedding\\Views\\User\\About.cshtml",
+              "ToolTip": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Views\\User\\About.cshtml",
+              "RelativeToolTip": "TemplateEmbedding\\Views\\User\\About.cshtml",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAANAAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-21T10:15:11.683Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-30T10:59:52.462Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AddCategory.cshtml",
-              "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Views\\Home\\AddCategory.cshtml",
-              "RelativeDocumentMoniker": "TemplateEmbedding\\Views\\Home\\AddCategory.cshtml",
-              "ToolTip": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Views\\Home\\AddCategory.cshtml",
-              "RelativeToolTip": "TemplateEmbedding\\Views\\Home\\AddCategory.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-18T11:35:39.058Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "TemplateEmbedding\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "TemplateEmbedding\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAIwDAAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-18T11:34:49.254Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "TemplateEmbedding\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "TemplateEmbedding\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAI0AAAAAAAAAAAAqwJgAAABdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-16T10:57:06.329Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Program.cs",
-              "RelativeDocumentMoniker": "TemplateEmbedding\\Program.cs",
-              "ToolTip": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Program.cs",
-              "RelativeToolTip": "TemplateEmbedding\\Program.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAAAwAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-23T10:45:11.248Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MiniprojectContext.cs",
-              "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Models\\MiniprojectContext.cs",
-              "RelativeDocumentMoniker": "TemplateEmbedding\\Models\\MiniprojectContext.cs",
-              "ToolTip": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Models\\MiniprojectContext.cs",
-              "RelativeToolTip": "TemplateEmbedding\\Models\\MiniprojectContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-23T10:36:25.8Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 25,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\farazinam\\source\\repos\\TemplateEmbedding\\TemplateEmbedding\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "TemplateEmbedding\\Views\\Home\\Index.cshtml",

@@ -13,12 +13,13 @@
 						<div class="col-md-12 mb-3">
 							<label for="validationServer01">Category Name</label>
 
-							<input type="text" class="form-control" id="validationServer01" asp-for="CategoryName" placeholder="Category Name" required>
+							<input type="text" class="form-control" id="validationServer01" asp-for="CategoryName" placeholder="Category Name">
+							<span asp-validation-for="CategoryName" class="text-danger"></span>
 							<div class="valid-feedback">
 								Looks good!
 							</div>
 						</div>
-						
+
 					</div>
 
 					<button class="btn btn-primary" type="submit">Add Category</button>
@@ -28,3 +29,10 @@
 	</div>	
 
 </div>
+
+@section script{
+	@{
+		await Html.RenderPartialAsync("_ValidationScriptsPartial");
+	}
+	
+}

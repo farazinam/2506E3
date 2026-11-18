@@ -1,0 +1,55 @@
+﻿
+@model TemplateEmbedding.Models.Product
+
+<div class="row mt-5">
+	<div class="col-lg-6">
+		<div class="card card-default">
+			<div class="card-header card-header-border-bottom">
+				<h2>Product</h2>
+			</div>
+
+			<div class="card-body">
+				<form asp-controller="Home" asp-action="AddProduct" method="post" enctype="multipart/form-data">
+					<div class="form-row">
+						<div class="col-md-12 mb-3">
+							<label for="validationServer01">Product Name</label>
+							<input type="text" class="form-control" id="validationServer01" asp-for="ProductName" placeholder="Product Name" >
+							<span asp-validation-for="ProductName" class="text-danger"></span> <br />
+							
+							<label for="validationServer01">Product Price</label>
+							<input type="text" class="form-control" id="validationServer01" asp-for="ProductPrice" placeholder="Product Price" >
+							<span asp-validation-for="ProductPrice" class="text-danger"></span> <br />
+
+							<label for="validationServer01">Product Description</label>
+							<input type="text" class="form-control" id="validationServer01" asp-for="ProductDescription" placeholder="Product Desciption" >
+							<span asp-validation-for="ProductDescription" class="text-danger"></span> <br />
+
+							<label for="validationServer01">Product Image</label>
+							<input type="file" name="f" class="form-control" id="validationServer01" asp-for="ProductImage" placeholder="Product Image" >
+							@* <span asp-validation-for="ProductImage" class="text-danger"></span> <br /> *@
+
+							<label for="validationServer01">Category Name</label>
+							<select class="form-select" aria-label="Default select example"
+							asp-for="CatId" asp-items="ViewBag.Cats"
+							>
+								<option disabled selected>Select Category</option>
+							</select> <br />
+							<span asp-validation-for="CatId" class="text-danger"></span>
+						</div>
+
+					</div>
+
+					<button class="btn btn-primary" type="submit">Add Product</button>
+				</form>
+			</div>
+		</div>
+	</div>	
+
+</div>
+
+@section script {
+	@{
+		await Html.RenderPartialAsync("_ValidationScriptsPartial");
+	}
+
+}
